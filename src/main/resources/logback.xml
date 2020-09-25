@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <!-- encoders are assigned the type
-             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
             <pattern>%d{dd.MM.yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{20} - %msg%n</pattern>
         </encoder>
     </appender>
-   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-       <file>log111.log</file>
-       <append>true</append>
-       <encoder>
-           <pattern>%d %p %c{1.} [%t] %m%n</pattern>
-       </encoder>
-   </appender>
-    <root level="debug">
-        <appender-ref ref="STDOUT" />
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logSpringApp.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logSpringApp.%d{dd-MM-yyyy}.log</fileNamePattern>
+            <maxHistory>1</maxHistory>
+            <totalSizeCap>1MB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE2" class="ch.qos.logback.core.FileAppender">
+        <file>logComDexsysTgBot.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE3" class="ch.qos.logback.core.FileAppender">
+        <file>logAllPackageApp.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework.boot" level="DEBUG">
         <appender-ref ref="FILE"/>
+    </logger>
+
+    <logger name="com.dexsys.telegrammbot.TelegrammBotApplication" level="TRACE">
+        <appender-ref ref="FILE2"/>
+    </logger>
+
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE3"/>
     </root>
 </configuration>
