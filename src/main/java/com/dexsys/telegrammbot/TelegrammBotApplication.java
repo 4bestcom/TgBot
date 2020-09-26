@@ -26,6 +26,7 @@ public class TelegrammBotApplication {
 		Student student = new Student("Petr", "Magomedov", "Philosofy", 24);
 		System.out.println(student.getCourse());
 		System.out.println(student.toString());
+		log.error("error for send to email");
 
 		SpringApplication.run(TelegrammBotApplication.class, args);
 

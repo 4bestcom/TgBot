@@ -4,3 +4,152 @@
 2020-09-26 15:15:58,604 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
 2020-09-26 15:15:59,059 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3824 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
 2020-09-26 15:15:59,060 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 15:49:16,970 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:49:16,972 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:49:16,973 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:49:16,975 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:56:19,396 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:56:19,398 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:56:19,399 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:56:19,400 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:57:52,747 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:57:52,749 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:57:52,750 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:57:52,751 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:58:21,743 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:58:21,744 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:58:21,745 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:58:21,748 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:59:07,472 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:59:07,474 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:59:07,474 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:59:07,475 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:59:22,864 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:59:22,866 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:59:22,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:59:22,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:59:39,886 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:59:39,888 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:59:39,889 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:59:39,890 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:59:50,864 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 15:59:50,865 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 15:59:50,866 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 15:59:50,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 15:59:51,340 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4316 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 15:59:51,341 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 15:59:53,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.525 seconds (JVM running for 3.334)
+2020-09-26 16:00:48,198 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:00:48,199 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:00:48,200 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:00:48,201 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:05:28,121 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:05:28,123 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:05:28,125 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:05:28,128 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:06:00,990 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:06:00,992 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:06:00,993 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:06:00,994 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:06:32,387 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:06:32,388 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:06:32,389 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:06:32,390 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:06:56,559 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:06:56,561 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:06:56,562 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:06:56,562 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:09:55,960 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:09:55,963 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:09:55,964 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:09:55,965 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:10:40,258 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:10:40,260 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:10:40,261 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:10:40,262 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:10:40,754 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6552 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:10:40,755 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:10:43,199 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.861 seconds (JVM running for 3.804)
+2020-09-26 16:14:29,556 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:14:29,558 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:14:29,559 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:14:29,560 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:14:29,947 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3292 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:14:29,948 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:14:32,158 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.522 seconds (JVM running for 3.268)
+2020-09-26 16:17:35,936 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:17:35,939 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:17:35,939 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:17:35,940 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:17:36,493 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7272 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:17:36,494 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:17:38,856 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.844 seconds (JVM running for 3.81)
+2020-09-26 16:19:49,115 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:19:49,117 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:19:49,117 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:19:49,118 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:19:49,632 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4012 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:19:49,632 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:19:51,968 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.741 seconds (JVM running for 3.603)
+2020-09-26 16:20:36,567 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:20:36,574 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:20:36,575 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:20:36,578 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:20:37,439 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6948 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:20:37,440 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:20:40,061 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.381 seconds (JVM running for 5.039)
+2020-09-26 16:21:39,613 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:21:39,615 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:21:39,616 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:21:39,617 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:21:40,097 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8088 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:21:40,098 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:21:42,395 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.693 seconds (JVM running for 3.57)
+2020-09-26 16:24:34,441 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:24:34,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:24:34,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:24:34,445 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:24:34,445 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
+2020-09-26 16:24:38,679 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6032 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:24:38,680 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:24:41,202 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.84 seconds (JVM running for 7.679)
+2020-09-26 16:31:42,359 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:31:42,361 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:31:42,361 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:31:42,362 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:31:42,363 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
+2020-09-26 16:31:46,394 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3788 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:31:46,395 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:31:48,391 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.261 seconds (JVM running for 6.688)
+2020-09-26 16:37:57,292 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:37:57,295 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:37:57,297 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:37:57,298 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:37:57,299 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
+2020-09-26 16:37:58,053 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9256 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:37:58,054 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:38:00,997 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.513 seconds (JVM running for 5.272)
+2020-09-26 16:41:50,424 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:41:50,426 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:41:50,427 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:41:50,428 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:41:50,429 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
+2020-09-26 16:41:54,355 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8620 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:41:54,356 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:41:56,638 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.57 seconds (JVM running for 7.069)
+2020-09-26 16:42:31,439 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 16:42:31,442 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 16:42:31,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 16:42:31,444 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 16:42:31,444 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
+2020-09-26 16:42:35,356 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9636 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 16:42:35,357 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 16:42:37,662 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.592 seconds (JVM running for 7.299)
+2020-09-26 17:10:47,467 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
+2020-09-26 17:10:47,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
+2020-09-26 17:10:47,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
+2020-09-26 17:10:47,471 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
+2020-09-26 17:10:47,472 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
+2020-09-26 17:10:51,364 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6288 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-09-26 17:10:51,365 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-09-26 17:10:53,499 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.397 seconds (JVM running for 6.767)
