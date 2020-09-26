@@ -1,0 +1,17 @@
+2020-09-26 15:15:58,922 DEBUG org.springframework.boot.context.logging.ClasspathLoggingApplicationListener [main] Application started with classpath: unknown
+2020-09-26 15:15:59,061 DEBUG org.springframework.boot.SpringApplication [main] Loading source class com.dexsys.telegrammbot.TelegrammBotApplication
+2020-09-26 15:15:59,127 DEBUG org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5357c287
+2020-09-26 15:15:59,864 DEBUG org.springframework.boot.autoconfigure.AutoConfigurationPackages [main] @EnableAutoConfiguration was declared on a class in the package 'com.dexsys.telegrammbot'. Automatic @Repository and @Entity scanning is enabled.
+2020-09-26 15:16:00,249 DEBUG org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory [main] Code archive: D:\Games\apache-maven-3.6.3\repo\org\springframework\boot\spring-boot\2.3.4.RELEASE\spring-boot-2.3.4.RELEASE.jar
+2020-09-26 15:16:00,249 DEBUG org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory [main] Code archive: D:\Games\apache-maven-3.6.3\repo\org\springframework\boot\spring-boot\2.3.4.RELEASE\spring-boot-2.3.4.RELEASE.jar
+2020-09-26 15:16:00,249 DEBUG org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory [main] None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2020-09-26 15:16:00,268 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-09-26 15:16:00,379 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-09-26 15:16:00,379 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1252 ms
+2020-09-26 15:16:00,492 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [main] Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-09-26 15:16:00,492 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [main] Mapping servlets: dispatcherServlet urls=[/]
+2020-09-26 15:16:00,506 DEBUG org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter [main] Filter 'webMvcMetricsFilter' configured for use
+2020-09-26 15:16:00,506 DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter [main] Filter 'requestContextFilter' configured for use
+2020-09-26 15:16:00,506 DEBUG org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter [main] Filter 'characterEncodingFilter' configured for use
+2020-09-26 15:16:00,506 DEBUG org.springframework.boot.web.servlet.filter.OrderedFormContentFilter [main] Filter 'formContentFilter' configured for use
+2020-09-26 15:16:00,762 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

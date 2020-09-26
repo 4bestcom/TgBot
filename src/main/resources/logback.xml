@@ -39,6 +39,9 @@
     <logger name="com.dexsys.telegrammbot.TelegrammBotApplication" level="TRACE">
         <appender-ref ref="FILE2"/>
     </logger>
+    <logger name="com.dexsys.telegrammbot.TelegrammBotApplication" level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </logger>
 
 
     <root level="DEBUG">
