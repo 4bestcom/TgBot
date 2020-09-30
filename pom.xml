@@ -16,9 +16,20 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<telegrambot.version>4.9.1</telegrambot.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambotsextensions</artifactId>
+			<version>${telegrambot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots</artifactId>
+			<version>${telegrambot.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>javax.activation</groupId>
 			<artifactId>activation</artifactId>
