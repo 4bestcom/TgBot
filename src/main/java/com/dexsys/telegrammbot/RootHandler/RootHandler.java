@@ -31,7 +31,7 @@ public class RootHandler extends TelegramLongPollingBot implements IFindUser {
         String inputTextMg = update.getMessage().getText();
         String regexBirthday = "[0-3][0-9]\\.[01][0-9]\\.[12][09][0-9][0-9]";
 
-        if (inputTextMg.matches(regexBirthday)) {
+        if (inputTextMg.matches(regexBirthday) && !isBd) {
             log.info("User enter Birthday");
             findUserAddBirthday(chatId, users, inputTextMg);
             log.info("system find this user in DB, added before him Birthday");
