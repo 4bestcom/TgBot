@@ -1,7 +1,9 @@
-package com.dexsys.telegrammbot.RootHandler;
+package com.dexsys.telegrammbot.Controllers;
 
-import com.dexsys.telegrammbot.Data.TgKeyBoardReply;
-import com.dexsys.telegrammbot.Data.User;
+import com.dexsys.telegrammbot.Services.IAddNewKeyBoard;
+import com.dexsys.telegrammbot.Services.TgKeyBoard;
+import com.dexsys.telegrammbot.Domain.User;
+import com.dexsys.telegrammbot.Services.TgKeyBoardReply;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -58,10 +60,12 @@ public class RootHandler extends TelegramLongPollingBot implements IFindUser {
                 e.printStackTrace();
             }
         } else if (isBd) {
+            TgKeyBoard tgKeyBoard = new TgKeyBoard();
+            IAddNewKeyBoard addNewKeyBoardReply = new TgKeyBoardReply();
             log.info("user writing message");
             message.setChatId(update.getMessage().getChatId());
             message.setText(update.getMessage().getText());
-            TgKeyBoardReply.addNewKeyboard(message);
+            tgKeyBoard.enterNewKeyBoard(addNewKeyBoardReply, message);
             try {
                 execute(message);
                 log.info("sending message done");

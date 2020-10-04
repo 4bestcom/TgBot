@@ -1,6 +1,6 @@
-package com.dexsys.telegrammbot.RootHandler;
+package com.dexsys.telegrammbot.Controllers;
 
-import com.dexsys.telegrammbot.Data.User;
+import com.dexsys.telegrammbot.Domain.User;
 
 import java.util.Map;
 

@@ -1,6 +1,6 @@
 package com.dexsys.telegrammbot;
 
-import com.dexsys.telegrammbot.RootHandler.RootHandler;
+import com.dexsys.telegrammbot.Controllers.RootHandler;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.TelegramBotsApi;

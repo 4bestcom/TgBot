@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.Data;
+package com.dexsys.telegrammbot.Domain;
 
 
 import lombok.Builder;

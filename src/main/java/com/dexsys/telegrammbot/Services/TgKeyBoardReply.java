@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.Data;
+package com.dexsys.telegrammbot.Services;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -8,9 +8,9 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import java.util.ArrayList;
 import java.util.List;
 
-public class TgKeyBoardReply {
-
-    public static void addNewKeyboard (SendMessage sendMessage){
+public class TgKeyBoardReply implements IAddNewKeyBoard{
+    @Override
+    public void addNewKeyboard(SendMessage sendMessage) {
         ReplyKeyboardMarkup keyboard = new ReplyKeyboardMarkup();
         keyboard.setSelective(true);
         keyboard.setResizeKeyboard(true);
