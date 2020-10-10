@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.Services;
+package com.dexsys.telegrammbot.TgBotControllers;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -8,19 +8,21 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import java.util.ArrayList;
 import java.util.List;
 
-public class TgKeyBoardReply implements IAddNewKeyBoard{
-    @Override
-    public void addNewKeyboard(SendMessage sendMessage) {
-        ReplyKeyboardMarkup keyboard = new ReplyKeyboardMarkup();
-        keyboard.setSelective(true);
-        keyboard.setResizeKeyboard(true);
-        keyboard.setOneTimeKeyboard(false);
+public class TgKeyBoardReply {
+    private int count = 0;
 
+    public void addNewKeyboard(SendMessage message) {
+        if (count > 1) return;
+        ReplyKeyboardMarkup keyboard = new ReplyKeyboardMarkup();
         List<KeyboardRow> keyboardRows = new ArrayList<>();
         KeyboardRow keyboardRow1 = new KeyboardRow();
+        keyboard.setSelective(true);
+        keyboard.setResizeKeyboard(true);
+        keyboard.setOneTimeKeyboard(true);
         keyboardRow1.add(new KeyboardButton("/addBirthday"));
         keyboardRows.add(keyboardRow1);
         keyboard.setKeyboard(keyboardRows);
-        sendMessage.setReplyMarkup(keyboard);
+        message.setReplyMarkup(keyboard);
+        count++;
     }
 }
