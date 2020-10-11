@@ -1,5 +1,6 @@
 package com.dexsys.telegrammbot.TgBotControllers;
 
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
@@ -8,11 +9,10 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import java.util.ArrayList;
 import java.util.List;
 
-public class TgKeyBoardReply {
-    private int count = 0;
+@Component
+public class TgKeyBoardReply implements IKeyBoard{
 
     public void addNewKeyboard(SendMessage message) {
-        if (count > 1) return;
         ReplyKeyboardMarkup keyboard = new ReplyKeyboardMarkup();
         List<KeyboardRow> keyboardRows = new ArrayList<>();
         KeyboardRow keyboardRow1 = new KeyboardRow();
@@ -23,6 +23,6 @@ public class TgKeyBoardReply {
         keyboardRows.add(keyboardRow1);
         keyboard.setKeyboard(keyboardRows);
         message.setReplyMarkup(keyboard);
-        count++;
+
     }
 }

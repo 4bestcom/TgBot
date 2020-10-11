@@ -1,10 +1,12 @@
 package com.dexsys.telegrammbot.Repository;
 
 import com.dexsys.telegrammbot.Domain.User;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MapRepository implements IRepository {
 
     private Map<Long, User> users = new HashMap<>();
@@ -18,7 +20,7 @@ public class MapRepository implements IRepository {
     }
 
     @Override
-    public User readUserFromBase(long chatId) {
-        return users.get(chatId);
+    public User readUserFromBase(long id) {
+        return users.get(id);
     }
 }

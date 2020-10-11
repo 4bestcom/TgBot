@@ -1,27 +1,41 @@
 package com.dexsys.telegrammbot.TgBotControllers;
 
-import com.dexsys.telegrammbot.Repository.MapRepository;
 import com.dexsys.telegrammbot.Services.UserServices;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-
+@Component
 public class RootHandler extends TelegramLongPollingBot {
     private static final String TOKEN = "1399901257:AAEVQYREew0BXSH8T7n40YiKI_uI8VRXudQ";
     private static final String NAME_BOT = "BirthdayDexTgBot";
-    private UserServices userServices = new UserServices(new MapRepository());
     private boolean isBirthday = true;
     private boolean isRun = true;
+    private UserServices userServices;
+    private IKeyBoard keyBoard;
     private static Logger log = LoggerFactory.getLogger(RootHandler.class);
-    private TgKeyBoardReply keyBoard = new TgKeyBoardReply();
 
+
+    @Autowired
+    public void setUserServices(UserServices userServices) {
+        this.userServices = userServices;
+    }
+
+    @Autowired
+    @Qualifier("tgKeyBoardReply")
+    public void setKeyBoard(IKeyBoard keyBoard) {
+        this.keyBoard = keyBoard;
+    }
 
     @Override
     public void onUpdateReceived(Update update) {
+
         SendMessage message = new SendMessage();
         long chatId = update.getMessage().getChatId();
         log.info("run input message from tg chatId: " + chatId);
@@ -34,10 +48,9 @@ public class RootHandler extends TelegramLongPollingBot {
         if (inputTextMg.equals("/help")) {
             sendMgFromHelp(message, chatId);
         } else if (inputTextMg.equals("/start") && isRun) {
-
             isRun = false;
         } else if (inputTextMg.equals("/addBirthday") && !isRun) {
-            sendMgFromCommandAddBirthday(message, chatId, update);
+            sendMgFromCommandAddBirthday(message, chatId);
         } else if (inputTextMg.matches(regexBirthday) && !isBirthday && !isRun) {
             sendMgFromMatchesRegexBirthday(message, chatId, inputTextMg);
         } else if (isBirthday && !isRun) {
@@ -85,7 +98,7 @@ public class RootHandler extends TelegramLongPollingBot {
         }
     }
 
-    public void sendMgFromCommandAddBirthday(SendMessage message, long chatId, Update update) {
+    public void sendMgFromCommandAddBirthday(SendMessage message, long chatId) {
         log.info("user press button /addBirthday");
         message.setChatId(chatId);
         message.setText("Введите дату рождения в формате 19.05.1982");

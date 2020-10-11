@@ -1,267 +1,109 @@
-2020-09-26 15:15:58,599 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:15:58,601 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:15:58,603 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:15:58,604 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:15:59,059 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3824 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 15:15:59,060 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 15:49:16,970 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:49:16,972 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:49:16,973 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:49:16,975 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:56:19,396 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:56:19,398 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:56:19,399 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:56:19,400 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:57:52,747 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:57:52,749 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:57:52,750 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:57:52,751 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:58:21,743 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:58:21,744 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:58:21,745 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:58:21,748 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:59:07,472 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:59:07,474 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:59:07,474 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:59:07,475 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:59:22,864 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:59:22,866 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:59:22,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:59:22,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:59:39,886 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:59:39,888 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:59:39,889 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:59:39,890 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:59:50,864 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 15:59:50,865 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 15:59:50,866 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 15:59:50,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 15:59:51,340 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4316 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 15:59:51,341 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 15:59:53,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.525 seconds (JVM running for 3.334)
-2020-09-26 16:00:48,198 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:00:48,199 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:00:48,200 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:00:48,201 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:05:28,121 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:05:28,123 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:05:28,125 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:05:28,128 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:06:00,990 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:06:00,992 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:06:00,993 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:06:00,994 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:06:32,387 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:06:32,388 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:06:32,389 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:06:32,390 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:06:56,559 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:06:56,561 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:06:56,562 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:06:56,562 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:09:55,960 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:09:55,963 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:09:55,964 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:09:55,965 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:10:40,258 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:10:40,260 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:10:40,261 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:10:40,262 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:10:40,754 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6552 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:10:40,755 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:10:43,199 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.861 seconds (JVM running for 3.804)
-2020-09-26 16:14:29,556 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:14:29,558 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:14:29,559 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:14:29,560 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:14:29,947 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3292 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:14:29,948 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:14:32,158 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.522 seconds (JVM running for 3.268)
-2020-09-26 16:17:35,936 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:17:35,939 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:17:35,939 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:17:35,940 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:17:36,493 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7272 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:17:36,494 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:17:38,856 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.844 seconds (JVM running for 3.81)
-2020-09-26 16:19:49,115 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:19:49,117 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:19:49,117 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:19:49,118 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:19:49,632 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4012 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:19:49,632 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:19:51,968 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.741 seconds (JVM running for 3.603)
-2020-09-26 16:20:36,567 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:20:36,574 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:20:36,575 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:20:36,578 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:20:37,439 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6948 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:20:37,440 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:20:40,061 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.381 seconds (JVM running for 5.039)
-2020-09-26 16:21:39,613 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:21:39,615 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:21:39,616 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:21:39,617 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:21:40,097 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8088 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:21:40,098 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:21:42,395 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.693 seconds (JVM running for 3.57)
-2020-09-26 16:24:34,441 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:24:34,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:24:34,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:24:34,445 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:24:34,445 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-26 16:24:38,679 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6032 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:24:38,680 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:24:41,202 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.84 seconds (JVM running for 7.679)
-2020-09-26 16:31:42,359 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:31:42,361 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:31:42,361 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:31:42,362 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:31:42,363 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-26 16:31:46,394 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3788 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:31:46,395 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:31:48,391 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.261 seconds (JVM running for 6.688)
-2020-09-26 16:37:57,292 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:37:57,295 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:37:57,297 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:37:57,298 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:37:57,299 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-26 16:37:58,053 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9256 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:37:58,054 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:38:00,997 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.513 seconds (JVM running for 5.272)
-2020-09-26 16:41:50,424 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:41:50,426 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:41:50,427 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:41:50,428 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:41:50,429 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-26 16:41:54,355 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8620 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:41:54,356 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:41:56,638 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.57 seconds (JVM running for 7.069)
-2020-09-26 16:42:31,439 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 16:42:31,442 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 16:42:31,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 16:42:31,444 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 16:42:31,444 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-26 16:42:35,356 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9636 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 16:42:35,357 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 16:42:37,662 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.592 seconds (JVM running for 7.299)
-2020-09-26 17:10:47,467 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-26 17:10:47,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-26 17:10:47,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-26 17:10:47,471 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-26 17:10:47,472 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-26 17:10:51,364 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6288 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-26 17:10:51,365 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-26 17:10:53,499 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 2.397 seconds (JVM running for 6.767)
-2020-09-29 19:34:57,867 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-29 19:34:57,873 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-29 19:34:57,873 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-29 19:34:57,874 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-29 19:35:49,953 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] the app starts
-2020-09-29 19:35:49,959 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @AllArgsConstructor and @Data
-2020-09-29 19:35:49,960 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Model through @Builder, @Setter and @Getter
-2020-09-29 19:35:49,961 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] create object Student through @RequiredArgsConstructor, @Getter and @ToString
-2020-09-29 19:35:49,961 ERROR com.dexsys.telegrammbot.TelegrammBotApplication [main] error for send to email
-2020-09-29 19:35:54,034 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3948 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 19:35:54,035 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 19:35:58,214 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.449 seconds (JVM running for 8.951)
-2020-09-29 20:08:00,750 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7852 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:08:00,756 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:08:03,661 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.29 seconds (JVM running for 4.078)
-2020-09-29 20:18:54,666 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10192 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:18:54,668 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:18:57,616 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.362 seconds (JVM running for 4.162)
-2020-09-29 20:19:41,960 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7164 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:19:41,963 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:19:44,904 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.29 seconds (JVM running for 4.106)
-2020-09-29 20:20:15,441 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9512 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:20:15,443 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:20:18,412 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.324 seconds (JVM running for 4.092)
-2020-09-29 20:25:57,156 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8744 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:25:57,160 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:26:00,222 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.453 seconds (JVM running for 4.253)
-2020-09-29 20:26:25,268 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9184 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:26:25,271 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:26:28,195 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.276 seconds (JVM running for 4.067)
-2020-09-29 20:27:16,536 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5592 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:27:16,537 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:27:19,567 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.386 seconds (JVM running for 4.183)
-2020-09-29 20:35:01,537 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7464 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 20:35:01,539 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 20:35:04,549 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.367 seconds (JVM running for 4.143)
-2020-09-29 21:13:14,439 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9956 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 21:13:14,442 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 21:13:17,585 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.553 seconds (JVM running for 4.408)
-2020-09-29 21:16:51,156 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3244 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 21:16:51,158 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 21:16:54,451 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.755 seconds (JVM running for 4.651)
-2020-09-29 22:15:49,161 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9268 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 22:15:49,166 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 22:15:52,396 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.7 seconds (JVM running for 4.553)
-2020-09-29 22:18:23,756 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4800 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 22:18:23,757 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 22:18:27,035 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.671 seconds (JVM running for 4.457)
-2020-09-29 23:34:20,506 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6516 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 23:34:20,508 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 23:34:23,642 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.422 seconds (JVM running for 4.181)
-2020-09-29 23:36:34,196 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7848 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 23:36:34,198 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 23:36:37,122 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.287 seconds (JVM running for 4.047)
-2020-09-29 23:52:24,361 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6096 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-29 23:52:24,363 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-29 23:52:27,367 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.403 seconds (JVM running for 4.151)
-2020-09-30 00:01:07,620 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9312 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 00:01:07,622 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 00:01:10,597 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.419 seconds (JVM running for 4.249)
-2020-09-30 00:02:28,012 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5032 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 00:02:28,014 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 00:02:30,997 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.429 seconds (JVM running for 4.236)
-2020-09-30 00:03:00,939 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5892 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 00:03:00,941 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 00:03:03,916 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.324 seconds (JVM running for 4.116)
-2020-09-30 00:06:11,466 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6012 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 00:06:11,468 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 00:06:14,477 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.374 seconds (JVM running for 4.165)
-2020-09-30 00:14:46,920 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7852 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 00:14:46,921 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 00:14:59,343 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8848 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 00:14:59,344 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 00:15:02,251 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.298 seconds (JVM running for 4.077)
-2020-09-30 20:06:05,063 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8056 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 20:06:05,065 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 20:06:08,368 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.611 seconds (JVM running for 4.351)
-2020-09-30 20:22:00,614 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6920 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 20:22:00,616 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 20:22:03,642 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.382 seconds (JVM running for 4.192)
-2020-09-30 20:22:24,850 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4204 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 20:22:24,864 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 20:22:27,753 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.314 seconds (JVM running for 4.167)
-2020-09-30 20:59:41,633 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5668 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 20:59:41,635 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:00:11,463 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8608 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:00:11,470 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:00:14,455 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.357 seconds (JVM running for 4.148)
-2020-09-30 21:03:11,728 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7236 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:03:11,730 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:03:14,685 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.326 seconds (JVM running for 4.155)
-2020-09-30 21:07:02,625 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3724 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:07:02,627 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:07:05,592 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.327 seconds (JVM running for 4.091)
-2020-09-30 21:08:21,456 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 1772 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:08:21,458 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:08:24,428 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.39 seconds (JVM running for 4.209)
-2020-09-30 21:33:04,381 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 2860 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:33:04,383 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:33:07,497 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.485 seconds (JVM running for 4.292)
-2020-09-30 21:34:17,047 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4916 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:34:17,049 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:34:20,087 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.412 seconds (JVM running for 4.218)
-2020-09-30 21:36:51,231 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5388 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:36:51,232 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:36:54,307 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.537 seconds (JVM running for 4.41)
-2020-09-30 21:43:24,578 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9492 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 21:43:24,581 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 21:43:27,677 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.55 seconds (JVM running for 4.451)
-2020-09-30 22:10:44,029 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6656 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
-2020-09-30 22:10:44,030 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
-2020-09-30 22:10:47,354 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.803 seconds (JVM running for 4.629)
+2020-10-11 10:36:20,919 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8524 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:36:20,922 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:36:24,709 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.28 seconds (JVM running for 5.46)
+2020-10-11 10:46:36,374 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8632 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:46:36,376 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:46:40,008 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.998 seconds (JVM running for 5.826)
+2020-10-11 10:48:20,224 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6312 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:48:20,225 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:51:09,567 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9640 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:51:09,583 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:51:13,138 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.999 seconds (JVM running for 5.028)
+2020-10-11 10:52:20,724 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5036 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:52:20,725 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:52:23,770 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.475 seconds (JVM running for 4.33)
+2020-10-11 10:52:30,767 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3876 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:52:30,768 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:52:34,162 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.837 seconds (JVM running for 4.927)
+2020-10-11 10:58:09,861 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10404 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 10:58:09,862 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 10:58:13,019 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.639 seconds (JVM running for 4.508)
+2020-10-11 11:09:47,282 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10592 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:09:47,284 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:09:50,542 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.758 seconds (JVM running for 4.711)
+2020-10-11 11:10:07,776 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9392 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:10:07,778 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:10:11,269 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.964 seconds (JVM running for 5.155)
+2020-10-11 11:11:12,848 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3676 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:11:12,850 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:12:24,526 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10920 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:12:24,527 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:12:28,014 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.927 seconds (JVM running for 4.922)
+2020-10-11 11:14:47,008 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8892 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:14:47,009 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:14:50,639 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.078 seconds (JVM running for 5.216)
+2020-10-11 11:16:22,836 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 4184 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:16:22,838 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:28:13,783 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 3664 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:28:13,784 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:28:17,288 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.0 seconds (JVM running for 5.131)
+2020-10-11 11:30:27,194 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8352 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:30:27,196 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:30:34,038 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 856 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 11:30:34,040 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 11:30:37,346 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.718 seconds (JVM running for 4.766)
+2020-10-11 13:04:17,414 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10852 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 13:04:17,415 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 13:04:21,159 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.198 seconds (JVM running for 5.106)
+2020-10-11 13:05:12,318 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 6448 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 13:05:12,320 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 13:05:15,547 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.717 seconds (JVM running for 4.884)
+2020-10-11 13:06:04,454 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9192 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 13:06:04,455 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 13:06:07,788 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.83 seconds (JVM running for 4.804)
+2020-10-11 13:08:26,864 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9896 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 13:08:26,866 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 13:08:30,290 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.87 seconds (JVM running for 4.848)
+2020-10-11 13:19:12,620 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9764 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 13:19:12,621 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 13:19:15,541 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.376 seconds (JVM running for 4.176)
+2020-10-11 17:49:59,719 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10232 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:49:59,721 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:50:59,966 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8428 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:50:59,968 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:51:03,075 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.494 seconds (JVM running for 4.307)
+2020-10-11 17:51:51,202 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9536 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:51:51,203 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:51:54,297 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.473 seconds (JVM running for 4.3)
+2020-10-11 17:56:11,142 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7016 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:56:11,145 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:56:14,354 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.61 seconds (JVM running for 4.406)
+2020-10-11 17:56:57,318 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10264 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:56:57,319 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:57:00,431 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.469 seconds (JVM running for 4.346)
+2020-10-11 17:58:41,083 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 7112 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:58:41,089 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:58:44,145 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.494 seconds (JVM running for 4.347)
+2020-10-11 17:59:08,896 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 2664 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 17:59:08,901 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 17:59:12,368 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.881 seconds (JVM running for 4.706)
+2020-10-11 18:02:01,333 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10652 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 18:02:01,337 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 18:02:05,057 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.186 seconds (JVM running for 5.295)
+2020-10-11 18:03:07,352 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 5576 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 18:03:07,356 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 18:03:10,847 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.996 seconds (JVM running for 5.047)
+2020-10-11 18:11:03,277 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9696 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 18:11:03,279 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 18:11:06,794 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.086 seconds (JVM running for 5.033)
+2020-10-11 18:11:40,236 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 8376 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 18:11:40,238 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 18:11:43,708 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 4.11 seconds (JVM running for 5.199)
+2020-10-11 18:12:54,915 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 432 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 18:12:54,919 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 18:12:58,374 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.965 seconds (JVM running for 5.035)
+2020-10-11 18:13:41,984 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10164 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 18:13:41,985 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 18:13:45,329 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.834 seconds (JVM running for 4.884)
+2020-10-11 20:13:24,197 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 10488 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 20:13:24,198 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 20:13:27,425 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.699 seconds (JVM running for 4.64)
+2020-10-11 20:18:17,650 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9692 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 20:18:17,651 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 20:18:21,145 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.822 seconds (JVM running for 4.6)
+2020-10-11 20:19:10,569 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9904 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 20:19:10,572 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 20:19:13,765 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.61 seconds (JVM running for 4.47)
+2020-10-11 20:20:23,927 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Starting TelegrammBotApplication on ROMAN-ПК with PID 9264 (C:\Users\ROMAN\IdeaProjects\telegrammbot\target\classes started by ROMAN in C:\Users\ROMAN\IdeaProjects\telegrammbot)
+2020-10-11 20:20:23,928 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] No active profile set, falling back to default profiles: default
+2020-10-11 20:20:27,132 INFO com.dexsys.telegrammbot.TelegrammBotApplication [main] Started TelegrammBotApplication in 3.584 seconds (JVM running for 4.387)
