@@ -15,8 +15,8 @@ public class UserServices {
     }
 
 
-    public void createUserToBase(long id, String userName) {
-        repository.createUserToBase(id, userName);
+    public void createUserToBase(long id, String userName, UserStatus userStatus) {
+        repository.createUserToBase(id, userName, userStatus);
     }
 
     public User readUserFromBase(long id) {

@@ -26,6 +26,7 @@
     </appender>
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logSpringApp.log</file>
+        <append>false</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>logSpringApp.%d{dd-MM-yyyy}.log</fileNamePattern>
             <maxHistory>1</maxHistory>
@@ -37,12 +38,14 @@
     </appender>
     <appender name="FILE2" class="ch.qos.logback.core.FileAppender">
         <file>logComDexsysTgBot.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d %p %c{1.} [%t] %m%n</pattern>
         </encoder>
     </appender>
     <appender name="FILE3" class="ch.qos.logback.core.FileAppender">
         <file>logAllPackageApp.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d %p %c{1.} [%t] %m%n</pattern>
         </encoder>
