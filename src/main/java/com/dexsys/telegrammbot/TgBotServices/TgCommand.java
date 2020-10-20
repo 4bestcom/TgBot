@@ -1,6 +1,6 @@
 package com.dexsys.telegrammbot.TgBotServices;
 
-import com.dexsys.telegrammbot.Services.UserServices;
+import com.dexsys.telegrammbot.Services.IUserAction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +10,10 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @Component
-public class TgCommand implements ITelegramApi{
+public class TgCommand implements ITelegramApi {
     private static final Logger log = LoggerFactory.getLogger(TgCommand.class);
     private TelegramLongPollingBot telegramLongPollingBot;
+
     @Autowired
     public void setTelegramLongPollingBot(TelegramLongPollingBot telegramLongPollingBot) {
         this.telegramLongPollingBot = telegramLongPollingBot;
@@ -37,7 +38,8 @@ public class TgCommand implements ITelegramApi{
         message.setChatId(chatId);
         message.setText("/help - помощь\n" +
                 "/start - запуск бота\n" +
-                "/addBirthday - добавление даты рождения пользователя");
+                "/addBirthday - добавление даты рождения пользователя\n" +
+                "/infoAboutMe - инофрмация обо мне");
         try {
             telegramLongPollingBot.execute(message);
             log.info("sending message done");
@@ -48,10 +50,23 @@ public class TgCommand implements ITelegramApi{
     }
 
     @Override
-    public void sendMgFromMatchesRegexBirthday(long chatId, String inputTextMg, UserServices userServices) {
+    public void sendMgFromInfoMe(long chatId, SendMessage message, IUserAction iUserAction) {
+        message.setChatId(chatId);
+        message.setText(iUserAction.readUserFromBase(chatId).toString());
+        try {
+            telegramLongPollingBot.execute(message);
+            log.info("sending message done");
+        } catch (TelegramApiException e) {
+            log.error("sending message error");
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void sendMgFromMatchesRegexBirthday(long chatId, String inputTextMg, IUserAction iUserAction) {
         SendMessage message = new SendMessage();
         log.info("User enter Birthday");
-        userServices.readUserFromBase(chatId).setBirthDate(inputTextMg);
+        iUserAction.readUserFromBase(chatId).setBirthDate(inputTextMg);
         log.info("system find this user in DB, added before him Birthday");
         message.setChatId(chatId);
         message.setText("Спасибо");
@@ -65,10 +80,10 @@ public class TgCommand implements ITelegramApi{
     }
 
     @Override
-    public void sendMgFromCommandAddBirthday(long chatId, UserServices userServices) {
+    public void sendMgFromCommandAddBirthday(long chatId, IUserAction iUserAction) {
         SendMessage message = new SendMessage();
         log.info("user press button /addBirthday");
-        if (userServices.readUserFromBase(chatId).getBirthDate() != null) {
+        if (iUserAction.readUserFromBase(chatId).getBirthDate() != null) {
             return;
         }
         message.setChatId(chatId);

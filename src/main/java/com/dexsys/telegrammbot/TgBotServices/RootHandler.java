@@ -1,6 +1,6 @@
 package com.dexsys.telegrammbot.TgBotServices;
 
-import com.dexsys.telegrammbot.Services.UserServices;
+import com.dexsys.telegrammbot.Services.IUserAction;
 import com.dexsys.telegrammbot.Services.UserStatus;
 import com.dexsys.telegrammbot.TgBotServices.servicetgkeyboard.IKeyBoard;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 public class RootHandler extends TelegramLongPollingBot {
     private static final String TOKEN = "1399901257:AAEVQYREew0BXSH8T7n40YiKI_uI8VRXudQ";
     private static final String NAME_BOT = "BirthdayDexTgBot";
-    private UserServices userServices;
+    private IUserAction iUserAction;
     private IKeyBoard keyBoard;
     private static final Logger log = LoggerFactory.getLogger(RootHandler.class);
     private ITelegramApi telegramApi;
@@ -27,8 +27,8 @@ public class RootHandler extends TelegramLongPollingBot {
     }
 
     @Autowired
-    public void setUserServices(UserServices userServices) {
-        this.userServices = userServices;
+    public void setUserServices(IUserAction iUserAction) {
+        this.iUserAction = iUserAction;
     }
 
     @Autowired
@@ -44,12 +44,16 @@ public class RootHandler extends TelegramLongPollingBot {
         String userName = update.getMessage().getChat().getUserName();
         String inputTextMg = update.getMessage().getText();
         String regexBirthday = "[0-3][0-9]\\.[01][0-9]\\.[12][09][0-9][0-9]";
-        userServices.createUserToBase(chatId, userName, UserStatus.USER_START);
-        UserStatus userStatus = userServices.readUserFromBase(chatId).getUserStatus();
+        iUserAction.createUserToBase(chatId, userName, UserStatus.USER_START);
+        UserStatus userStatus = iUserAction.readUserFromBase(chatId).getUserStatus();
         SendMessage message = new SendMessage();
 
         if (inputTextMg.equals("/help")) {
             telegramApi.sendMgFromHelp(chatId, message);
+            return;
+        }
+        if (inputTextMg.equals("/infoAboutMe")) {
+            telegramApi.sendMgFromInfoMe(chatId, message, iUserAction);
             return;
         }
 
@@ -59,16 +63,16 @@ public class RootHandler extends TelegramLongPollingBot {
                 break;
             case USER_PRESS_BUTTON:
                 if (inputTextMg.matches(regexBirthday)) {
-                    telegramApi.sendMgFromMatchesRegexBirthday(chatId, inputTextMg, userServices);
-                    userServices.readUserFromBase(chatId).setUserStatus(UserStatus.USER_DEFAULT);
+                    telegramApi.sendMgFromMatchesRegexBirthday(chatId, inputTextMg, iUserAction);
+                    iUserAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_DEFAULT);
                 } else {
                     telegramApi.sendMgErrorEnterBirthday(chatId);
                 }
                 break;
             case USER_START:
                 if (inputTextMg.equals("/addBirthday")) {
-                    userServices.readUserFromBase(chatId).setUserStatus(UserStatus.USER_PRESS_BUTTON);
-                    telegramApi.sendMgFromCommandAddBirthday(chatId, userServices);
+                    iUserAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_PRESS_BUTTON);
+                    telegramApi.sendMgFromCommandAddBirthday(chatId, iUserAction);
                 } else {
                     SendMessage message1 = new SendMessage();
                     message1.setReplyMarkup(keyBoard.createNewKeyboard());

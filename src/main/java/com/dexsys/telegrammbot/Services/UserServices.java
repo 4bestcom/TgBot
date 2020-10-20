@@ -6,9 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserServices {
+public class UserServices implements IUserAction {
 
     private IRepository repository;
+
     @Autowired
     public void setRepository(IRepository repository) {
         this.repository = repository;
@@ -16,11 +17,11 @@ public class UserServices {
 
 
     public void createUserToBase(long id, String userName, UserStatus userStatus) {
-        repository.createUserToBase(id, userName, userStatus);
+        repository.create(id, userName, userStatus);
     }
 
     public User readUserFromBase(long id) {
-       return repository.readUserFromBase(id);
+        return repository.read(id);
     }
 
 

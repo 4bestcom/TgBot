@@ -13,17 +13,19 @@ public class MapRepository implements IRepository {
     private final Map<Long, User> users = new HashMap<>();
 
     @Override
-    public void createUserToBase(long id, String userName, UserStatus userStatus) {
-        System.out.println(users);
+    public void create(long id, String userName, UserStatus userStatus) {
         if (users.containsKey(id)) {
             return;
         }
-        users.put(id, User.builder().chatId(id).userName(userName).userStatus(userStatus).build());
-        System.out.println(users);
+        users.put(id, createUser(id, userName, userStatus));
     }
 
     @Override
-    public User readUserFromBase(long id) {
+    public User read(long id) {
         return users.get(id);
+    }
+
+    public User createUser(long id, String userName, UserStatus userStatus) {
+        return User.builder().chatId(id).userName(userName).userStatus(userStatus).build();
     }
 }

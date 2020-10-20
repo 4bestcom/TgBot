@@ -5,9 +5,9 @@ import com.dexsys.telegrammbot.Services.UserStatus;
 
 public interface IRepository {
 
-    void createUserToBase(long id, String userName, UserStatus userStatus);
+    void create(long id, String userName, UserStatus userStatus);
 
-    User readUserFromBase(long id);
+    User read(long id);
 
 
 }

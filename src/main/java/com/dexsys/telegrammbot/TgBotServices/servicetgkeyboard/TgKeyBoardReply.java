@@ -20,8 +20,9 @@ public class TgKeyBoardReply implements IKeyBoard{
         KeyboardRow keyboardRow1 = new KeyboardRow();
         keyboard.setSelective(true);
         keyboard.setResizeKeyboard(true);
-        keyboard.setOneTimeKeyboard(true);
+        keyboard.setOneTimeKeyboard(false);
         keyboardRow1.add(new KeyboardButton("/addBirthday"));
+        keyboardRow1.add(new KeyboardButton("/infoAboutMe"));
         keyboardRows.add(keyboardRow1);
         keyboard.setKeyboard(keyboardRows);
         return keyboard;
