@@ -5,6 +5,8 @@ import com.dexsys.telegrammbot.Repository.IRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class UserServices implements IUserAction {
 
@@ -15,14 +17,22 @@ public class UserServices implements IUserAction {
         this.repository = repository;
     }
 
-
+    @Override
     public void createUserToBase(long id, String userName, UserStatus userStatus) {
         repository.create(id, userName, userStatus);
     }
-
+    @Override
     public User readUserFromBase(long id) {
         return repository.read(id);
     }
 
+    @Override
+    public boolean deleteUser(long id) {
+        return repository.delete(id);
+    }
 
+    @Override
+    public List<User> readAllUserFromBase() {
+        return repository.readAll();
+    }
 }

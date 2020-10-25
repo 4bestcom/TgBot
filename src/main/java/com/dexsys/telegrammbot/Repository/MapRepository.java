@@ -4,7 +4,9 @@ import com.dexsys.telegrammbot.Domain.User;
 import com.dexsys.telegrammbot.Services.UserStatus;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Component
@@ -18,6 +20,20 @@ public class MapRepository implements IRepository {
             return;
         }
         users.put(id, createUser(id, userName, userStatus));
+    }
+
+    @Override
+    public List<User> readAll() {
+        return new ArrayList<>(users.values());
+    }
+
+    @Override
+    public boolean delete(long id) {
+        if (users.containsKey(id)) {
+            users.remove(id);
+            return true;
+        }
+        return false;
     }
 
     @Override
