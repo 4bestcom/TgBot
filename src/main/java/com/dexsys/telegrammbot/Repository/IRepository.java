@@ -11,9 +11,12 @@ public interface IRepository {
 
     User read(long id);
 
+    User read (String phone);
+
     List<User> readAll();
 
     boolean delete(long id);
+
 
 
 }

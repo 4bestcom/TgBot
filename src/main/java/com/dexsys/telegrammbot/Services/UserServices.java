@@ -27,6 +27,11 @@ public class UserServices implements IUserAction {
     }
 
     @Override
+    public User readUserUsingPhone(String phone) {
+        return repository.read(phone);
+    }
+
+    @Override
     public boolean deleteUser(long id) {
         return repository.delete(id);
     }

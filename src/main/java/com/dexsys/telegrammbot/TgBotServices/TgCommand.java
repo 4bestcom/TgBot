@@ -1,6 +1,7 @@
 package com.dexsys.telegrammbot.TgBotServices;
 
 import com.dexsys.telegrammbot.Services.IUserAction;
+import com.dexsys.telegrammbot.Services.UserStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,9 +51,39 @@ public class TgCommand implements ITelegramApi {
     }
 
     @Override
+    public void sendMgEnterPhone(SendMessage message, long chatId, String inputTextMg, IUserAction userAction) {
+        String phone = inputTextMg.replaceAll("[^\\+\\d]", "");
+        if (phone.matches("\\+\\d{11}")) {
+            userAction.readUserFromBase(chatId).setPhone(phone);
+            userAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_START);
+            message.setChatId(chatId);
+            message.setText("Номер телефона удачно добавлен");
+            try {
+                telegramLongPollingBot.execute(message);
+                log.info("sending message done");
+            } catch (TelegramApiException e) {
+                log.error("sending message error");
+                e.printStackTrace();
+            }
+            return;
+        }
+        message.setChatId(chatId);
+        message.setText("Введите ваш номер телефона в формате +79121234567");
+        try {
+            telegramLongPollingBot.execute(message);
+            log.info("sending message done");
+        } catch (TelegramApiException e) {
+            log.error("sending message error");
+            e.printStackTrace();
+        }
+    }
+
+    @Override
     public void sendMgFromInfoMe(long chatId, SendMessage message, IUserAction iUserAction) {
         message.setChatId(chatId);
-        message.setText(iUserAction.readUserFromBase(chatId).toString());
+        message.setText("UserName = " + iUserAction.readUserFromBase(chatId).getUserName() + "\n" +
+                "BirthDate = " + iUserAction.readUserFromBase(chatId).getBirthDate() + "\n" +
+                "phone = " + iUserAction.readUserFromBase(chatId).getPhone());
         try {
             telegramLongPollingBot.execute(message);
             log.info("sending message done");

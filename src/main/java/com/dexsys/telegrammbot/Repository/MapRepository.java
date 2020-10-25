@@ -4,10 +4,7 @@ import com.dexsys.telegrammbot.Domain.User;
 import com.dexsys.telegrammbot.Services.UserStatus;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Component
 public class MapRepository implements IRepository {
@@ -21,6 +18,7 @@ public class MapRepository implements IRepository {
         }
         users.put(id, createUser(id, userName, userStatus));
     }
+
 
     @Override
     public List<User> readAll() {
@@ -39,6 +37,17 @@ public class MapRepository implements IRepository {
     @Override
     public User read(long id) {
         return users.get(id);
+    }
+
+    @Override
+    public User read(String phone) {
+        for (Map.Entry<Long, User> entry : users.entrySet()) {
+            String phoneUser = entry.getValue().getPhone();
+            if (phoneUser.equals(phone)) {
+                return entry.getValue();
+            }
+        }
+        return null;
     }
 
     public User createUser(long id, String userName, UserStatus userStatus) {

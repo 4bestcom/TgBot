@@ -9,6 +9,8 @@ public interface IUserAction {
 
     User readUserFromBase(long id);
 
+    User readUserUsingPhone(String phone);
+
     List<User> readAllUserFromBase();
 
     boolean deleteUser(long id);

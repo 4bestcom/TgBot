@@ -16,4 +16,6 @@ public interface ITelegramApi {
     void sendMgFromDefaultRunning(long chatId, String inputTextMg, SendMessage message);
 
     void sendMgFromInfoMe(long chatId, SendMessage message, IUserAction iUserAction);
+
+    void sendMgEnterPhone(SendMessage message, long chatId, String inputTextMg, IUserAction userAction);
 }

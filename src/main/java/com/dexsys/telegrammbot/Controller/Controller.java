@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("api/v1/")
+@RestController
+@RequestMapping("/api/v1/users")
 public class Controller {
     private IUserAction iUserAction;
     @Autowired
@@ -17,15 +18,15 @@ public class Controller {
         this.iUserAction = iUserAction;
     }
 
-    @GetMapping("users/{id}")
-    public ResponseEntity<User> getUser(@PathVariable ("id") long id){
-        User user = iUserAction.readUserFromBase(id);
+    @GetMapping("/{phone}")
+    public ResponseEntity<User> getUser(@PathVariable ("phone") String phone){
+        User user = iUserAction.readUserUsingPhone(phone);
         if (user == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
-    @GetMapping("users")
+    @GetMapping
     public ResponseEntity<List<User>> getAllUser(){
         List<User> users = iUserAction.readAllUserFromBase();
         if (users.isEmpty()){
@@ -33,7 +34,7 @@ public class Controller {
         } else return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @DeleteMapping("users/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Boolean> deleteUser(@PathVariable("id") long id){
         boolean del = iUserAction.deleteUser(id);
         if (del){

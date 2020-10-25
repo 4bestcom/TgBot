@@ -44,7 +44,7 @@ public class RootHandler extends TelegramLongPollingBot {
         String userName = update.getMessage().getChat().getUserName();
         String inputTextMg = update.getMessage().getText();
         String regexBirthday = "[0-3][0-9]\\.[01][0-9]\\.[12][09][0-9][0-9]";
-        iUserAction.createUserToBase(chatId, userName, UserStatus.USER_START);
+        iUserAction.createUserToBase(chatId, userName, UserStatus.USER_BLOCKED);
         UserStatus userStatus = iUserAction.readUserFromBase(chatId).getUserStatus();
         SendMessage message = new SendMessage();
 
@@ -58,6 +58,9 @@ public class RootHandler extends TelegramLongPollingBot {
         }
 
         switch (userStatus) {
+            case USER_BLOCKED:
+                telegramApi.sendMgEnterPhone(message, chatId, inputTextMg, iUserAction);
+                break;
             case USER_DEFAULT:
                 telegramApi.sendMgFromDefaultRunning(chatId, inputTextMg, message);
                 break;

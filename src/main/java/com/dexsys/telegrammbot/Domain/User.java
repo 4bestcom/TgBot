@@ -12,6 +12,7 @@ public class User {
     private long chatId;
     private String userName;
     private String birthDate;
+    private String phone;
     private UserStatus userStatus;
 
 }
