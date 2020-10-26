@@ -2,12 +2,18 @@ package com.dexsys.telegrammbot.Repository;
 
 import com.dexsys.telegrammbot.Domain.User;
 import com.dexsys.telegrammbot.Services.UserStatus;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Component
 public class MapRepository implements IRepository {
+    private static final Logger log = LoggerFactory.getLogger(MapRepository.class);
 
     private final Map<Long, User> users = new HashMap<>();
 
@@ -44,8 +50,14 @@ public class MapRepository implements IRepository {
         for (Map.Entry<Long, User> entry : users.entrySet()) {
             String phoneUser = entry.getValue().getPhone();
             if (phoneUser.equals(phone)) {
+                log.warn("user is found");
                 return entry.getValue();
             }
+        }
+        try {
+            throw new RuntimeException();
+        } catch (RuntimeException e){
+            log.warn("user not found");
         }
         return null;
     }

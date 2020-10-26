@@ -1,5 +1,6 @@
 package com.dexsys.telegrammbot.TgBotServices;
 
+import com.dexsys.telegrammbot.Controller.IClientServiceAction;
 import com.dexsys.telegrammbot.Services.IUserAction;
 import com.dexsys.telegrammbot.Services.UserStatus;
 import org.slf4j.Logger;
@@ -14,6 +15,12 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class TgCommand implements ITelegramApi {
     private static final Logger log = LoggerFactory.getLogger(TgCommand.class);
     private TelegramLongPollingBot telegramLongPollingBot;
+    private IClientServiceAction iClientServiceAction;
+
+    @Autowired
+    public void setiClientServiceAction(IClientServiceAction iClientServiceAction) {
+        this.iClientServiceAction = iClientServiceAction;
+    }
 
     @Autowired
     public void setTelegramLongPollingBot(TelegramLongPollingBot telegramLongPollingBot) {
@@ -53,7 +60,9 @@ public class TgCommand implements ITelegramApi {
     @Override
     public void sendMgEnterPhone(SendMessage message, long chatId, String inputTextMg, IUserAction userAction) {
         String phone = inputTextMg.replaceAll("[^\\+\\d]", "");
-        if (phone.matches("\\+\\d{11}")) {
+        log.info("user enter phone: " + phone);
+        log.info("phone have access: " + iClientServiceAction.readUserPhoneFromServer(phone));
+        if (phone.matches("\\+\\d{11}") && iClientServiceAction.readUserPhoneFromServer(phone)) {
             userAction.readUserFromBase(chatId).setPhone(phone);
             userAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_START);
             message.setChatId(chatId);
