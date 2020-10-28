@@ -17,6 +17,7 @@ public class ClientService implements IClientServiceAction {
     private static final Logger log = LoggerFactory.getLogger(ClientService.class);
     private static final String URL = "https://serene-coast-56441.herokuapp.com/api/users/";
 
+
     public boolean readUserPhoneFromServer(String phone) {
         RestTemplate restTemplate = new RestTemplate();
         UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
@@ -30,7 +31,7 @@ public class ClientService implements IClientServiceAction {
         return false;
     }
 
-    public ResponseEntity<UserDTO> createUser (User user){
+    public ResponseEntity<UserDTO> createUser(User user) {
         RestTemplate restTemplate = new RestTemplate();
         UserDTO userDTO = UserDTO.builder()
                 .birthDay(user.getBirthDate())
@@ -43,16 +44,17 @@ public class ClientService implements IClientServiceAction {
         return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
-    public UserDTO readUserFromServer (String uuid){
+    public UserDTO readUserFromServer(String uuid) {
         RestTemplate restTemplate = new RestTemplate();
         UserDTO userDTO = restTemplate.getForObject(URL + "/" + uuid, UserDTO.class);
-        if (userDTO == null){
+        if (userDTO == null) {
             try {
                 throw new RuntimeException();
-            } catch (RuntimeException e){
+            } catch (RuntimeException e) {
                 log.warn("user not found");
             }
-        } log.info("userDTO is found");
+        }
+        log.info("userDTO is found");
         return userDTO;
     }
 
