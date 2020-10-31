@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/users")
-@Api(value = "operations" )
+@Api(value = "operations")
 public class Controller {
     private static final Logger log = LoggerFactory.getLogger(Controller.class);
     private IUserAction iUserAction;
@@ -28,17 +28,26 @@ public class Controller {
     @GetMapping("/{phone}")
     @ApiOperation(value = "Search a user with an phone")
     public ResponseEntity<User> getUser(@PathVariable("phone") String phone) {
-        User user = iUserAction.readUserUsingPhone(phone);
-        if (user == null) {
-            try {
-                throw new RuntimeException();
-            } catch (RuntimeException e) {
-                log.warn("user not found");
-                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-            }
-        } else {
-            log.warn("user is found");
+        try {
+            User user = iUserAction.readUserUsingPhone(phone);
+            log.info("user is found");
             return new ResponseEntity<>(user, HttpStatus.OK);
+        } catch (RuntimeException e) {
+            log.warn("user not found");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @GetMapping("/{id}")
+    @ApiOperation(value = "Search a user with an ID")
+    public ResponseEntity<User> getUserId(@PathVariable("id") long chatId) {
+        try {
+            User user = iUserAction.readUserFromBase(chatId);
+            log.info("user is found");
+            return new ResponseEntity<>(user, HttpStatus.OK);
+        } catch (RuntimeException e) {
+            log.warn("user not found");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 
@@ -47,12 +56,8 @@ public class Controller {
     public ResponseEntity<List<User>> getAllUser() {
         List<User> users = iUserAction.readAllUserFromBase();
         if (users.isEmpty()) {
-            try {
-                throw new RuntimeException();
-            } catch (RuntimeException e) {
-                log.warn("the user base is empty");
-                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-            }
+            log.warn("the user base is empty");
+            return new ResponseEntity<>(users, HttpStatus.NOT_FOUND);
         } else {
             return new ResponseEntity<>(users, HttpStatus.OK);
         }
@@ -65,12 +70,8 @@ public class Controller {
         if (del) {
             return new ResponseEntity<>(true, HttpStatus.OK);
         } else {
-            try {
-                throw new RuntimeException();
-            } catch (RuntimeException e) {
-                log.warn("user not found");
-                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-            }
+            log.warn("user not found");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 }

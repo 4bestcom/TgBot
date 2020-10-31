@@ -4,20 +4,23 @@ import com.dexsys.telegrammbot.DTO.UserDTO;
 import com.dexsys.telegrammbot.Domain.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.Set;
 import java.util.UUID;
 
-@Service
+
 public class ClientService implements IClientServiceAction {
     private static final Logger log = LoggerFactory.getLogger(ClientService.class);
-    private static final String URL = "https://serene-coast-56441.herokuapp.com/api/users/";
+    private final String URL = "https://serene-coast-56441.herokuapp.com/api/users/";
 
-
+    //this method is for inner business logic
     public boolean readUserPhoneFromServer(String phone) {
         RestTemplate restTemplate = new RestTemplate();
         UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
@@ -31,32 +34,67 @@ public class ClientService implements IClientServiceAction {
         return false;
     }
 
-    public ResponseEntity<UserDTO> createUser(User user) {
+    public ResponseEntity<String> createUser(User user) {
         RestTemplate restTemplate = new RestTemplate();
+        String[] BirthDateUser = user.getBirthDate().split("\\.");
+        LocalDateTime dateTimeBirthDateUser = LocalDateTime.of(Integer.parseInt(BirthDateUser[2]),
+                Integer.parseInt(BirthDateUser[1]),
+                Integer.parseInt(BirthDateUser[0]), 00, 00, 00);
         UserDTO userDTO = UserDTO.builder()
-                .birthDay(user.getBirthDate())
+                .birthDay(dateTimeBirthDateUser.toString())
                 .chatId(String.valueOf(user.getChatId()))
-                .id(UUID.randomUUID().toString())
+                .id(UUID.randomUUID())
                 .phone(user.getPhone())
                 .firstName(user.getUserName())
                 .build();
-        restTemplate.postForObject(URL, userDTO, UserDTO.class);
-        return new ResponseEntity<>(userDTO, HttpStatus.OK);
+        HttpEntity<UserDTO> entity = new HttpEntity<>(userDTO);
+        ResponseEntity<String> response = restTemplate.postForEntity(URL, entity, String.class);
+        if (response.getStatusCode().equals(HttpStatus.BAD_REQUEST)) {
+            return new ResponseEntity<>(response.getStatusCode().toString(), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(response.getBody(), HttpStatus.OK);
     }
 
-    public UserDTO readUserFromServer(String uuid) {
+    public ResponseEntity<String> generateUser() {
+        RestTemplate restTemplate = new RestTemplate();
+        HttpEntity<String> entity = new HttpEntity<>("");
+        ResponseEntity<String> response = restTemplate.postForEntity(URL + "generate", entity, String.class);
+        if (response.getStatusCode().equals(HttpStatus.BAD_REQUEST)) {
+            return new ResponseEntity<>(response.getStatusCode().toString(), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(response.getBody(), HttpStatus.OK);
+    }
+
+    public ResponseEntity<UserDTO> readUserFromServer(String uuid) {
         RestTemplate restTemplate = new RestTemplate();
         UserDTO userDTO = restTemplate.getForObject(URL + "/" + uuid, UserDTO.class);
         if (userDTO == null) {
-            try {
-                throw new RuntimeException();
-            } catch (RuntimeException e) {
-                log.warn("user not found");
-            }
+            log.warn("userDTO is not found");
+            return new ResponseEntity<>(userDTO, HttpStatus.NOT_FOUND);
         }
         log.info("userDTO is found");
-        return userDTO;
+        return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
+    public ResponseEntity<UserDTO[]> readAllUserFromServer() {
+        RestTemplate restTemplate = new RestTemplate();
+        UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
+        if (userDTOarr != null) {
+            log.info("array UserDTO: " + Arrays.toString(userDTOarr));
+            return new ResponseEntity<>(userDTOarr, HttpStatus.OK);
+        }
+        log.warn("userDTOarr is empty");
+        return new ResponseEntity<>(userDTOarr, HttpStatus.NOT_FOUND);
+    }
 
+    public ResponseEntity<Set<HttpMethod>> getOptionsFromServer(String uuid) {
+        RestTemplate restTemplate = new RestTemplate();
+        Set<HttpMethod> httpMethodSet = restTemplate.optionsForAllow(URL + "/" + uuid);
+        if (httpMethodSet.isEmpty()) {
+            log.warn("Options method not found");
+            return new ResponseEntity<>(httpMethodSet, HttpStatus.NOT_FOUND);
+        }
+        log.info("Options method is found");
+        return new ResponseEntity<>(httpMethodSet, HttpStatus.OK);
+    }
 }

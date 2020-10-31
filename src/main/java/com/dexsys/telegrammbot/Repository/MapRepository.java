@@ -54,12 +54,7 @@ public class MapRepository implements IRepository {
                 return entry.getValue();
             }
         }
-        try {
-            throw new RuntimeException();
-        } catch (RuntimeException e){
-            log.warn("user not found");
-        }
-        return null;
+        throw new RuntimeException("user not found in MockServer");
     }
 
     public User createUser(long id, String userName, UserStatus userStatus) {

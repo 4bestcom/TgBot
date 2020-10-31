@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot;
+package com.dexsys.telegrammbot.configuration;
 
 
 import org.springframework.context.annotation.Bean;
