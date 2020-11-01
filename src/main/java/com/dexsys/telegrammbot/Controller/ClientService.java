@@ -4,11 +4,12 @@ import com.dexsys.telegrammbot.DTO.UserDTO;
 import com.dexsys.telegrammbot.Domain.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestOperations;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -19,10 +20,14 @@ import java.util.UUID;
 public class ClientService implements IClientServiceAction {
     private static final Logger log = LoggerFactory.getLogger(ClientService.class);
     private final String URL = "https://serene-coast-56441.herokuapp.com/api/users/";
+    private RestOperations restTemplate;
+    @Autowired
+    public void setRestOperations(RestOperations restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     //this method is for inner business logic
     public boolean readUserPhoneFromServer(String phone) {
-        RestTemplate restTemplate = new RestTemplate();
         UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
         log.info("array UserDTO: " + Arrays.toString(userDTOarr));
         if (userDTOarr != null) {
@@ -35,7 +40,6 @@ public class ClientService implements IClientServiceAction {
     }
 
     public ResponseEntity<String> createUser(User user) {
-        RestTemplate restTemplate = new RestTemplate();
         String[] BirthDateUser = user.getBirthDate().split("\\.");
         LocalDateTime dateTimeBirthDateUser = LocalDateTime.of(Integer.parseInt(BirthDateUser[2]),
                 Integer.parseInt(BirthDateUser[1]),
@@ -56,7 +60,6 @@ public class ClientService implements IClientServiceAction {
     }
 
     public ResponseEntity<String> generateUser() {
-        RestTemplate restTemplate = new RestTemplate();
         HttpEntity<String> entity = new HttpEntity<>("");
         ResponseEntity<String> response = restTemplate.postForEntity(URL + "generate", entity, String.class);
         if (response.getStatusCode().equals(HttpStatus.BAD_REQUEST)) {
@@ -66,7 +69,6 @@ public class ClientService implements IClientServiceAction {
     }
 
     public ResponseEntity<UserDTO> readUserFromServer(String uuid) {
-        RestTemplate restTemplate = new RestTemplate();
         UserDTO userDTO = restTemplate.getForObject(URL + "/" + uuid, UserDTO.class);
         if (userDTO == null) {
             log.warn("userDTO is not found");
@@ -77,7 +79,6 @@ public class ClientService implements IClientServiceAction {
     }
 
     public ResponseEntity<UserDTO[]> readAllUserFromServer() {
-        RestTemplate restTemplate = new RestTemplate();
         UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
         if (userDTOarr != null) {
             log.info("array UserDTO: " + Arrays.toString(userDTOarr));
@@ -88,7 +89,6 @@ public class ClientService implements IClientServiceAction {
     }
 
     public ResponseEntity<Set<HttpMethod>> getOptionsFromServer(String uuid) {
-        RestTemplate restTemplate = new RestTemplate();
         Set<HttpMethod> httpMethodSet = restTemplate.optionsForAllow(URL + "/" + uuid);
         if (httpMethodSet.isEmpty()) {
             log.warn("Options method not found");
