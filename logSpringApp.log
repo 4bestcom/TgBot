@@ -930,7 +930,7 @@ Negative matches:
 
    ClientServiceConfiguration#getClientServiceDefault:
       Did not match:
-         - @ConditionalOnMissingBean (types: com.dexsys.telegrammbot.Controller.ClientService; SearchStrategy: all) found beans of type 'com.dexsys.telegrammbot.Controller.ClientService' getClientService (OnBeanCondition)
+         - @ConditionalOnMissingBean (types: com.dexsys.telegrammbot.services.clientservice.ClientService; SearchStrategy: all) found beans of type 'com.dexsys.telegrammbot.services.clientservice.ClientService' getClientService (OnBeanCondition)
 
    CloudFoundryActuatorAutoConfiguration:
       Did not match:

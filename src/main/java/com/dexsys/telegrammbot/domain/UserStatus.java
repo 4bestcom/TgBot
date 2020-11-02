@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.Services;
+package com.dexsys.telegrammbot.domain;
 
 public enum UserStatus {
     USER_START,

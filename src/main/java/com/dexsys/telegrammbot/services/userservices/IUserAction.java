@@ -1,6 +1,7 @@
-package com.dexsys.telegrammbot.Services;
+package com.dexsys.telegrammbot.services.userservices;
 
-import com.dexsys.telegrammbot.Domain.User;
+import com.dexsys.telegrammbot.domain.User;
+import com.dexsys.telegrammbot.domain.UserStatus;
 
 import java.util.List;
 

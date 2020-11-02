@@ -1,7 +1,6 @@
-package com.dexsys.telegrammbot.Domain;
+package com.dexsys.telegrammbot.domain;
 
 
-import com.dexsys.telegrammbot.Services.UserStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

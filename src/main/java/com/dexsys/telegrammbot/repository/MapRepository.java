@@ -1,7 +1,7 @@
-package com.dexsys.telegrammbot.Repository;
+package com.dexsys.telegrammbot.repository;
 
-import com.dexsys.telegrammbot.Domain.User;
-import com.dexsys.telegrammbot.Services.UserStatus;
+import com.dexsys.telegrammbot.domain.User;
+import com.dexsys.telegrammbot.domain.UserStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

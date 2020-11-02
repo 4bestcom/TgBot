@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.TgBotServices;
+package com.dexsys.telegrammbot.services.tgbotservices;
 
 public interface IStartTelegramBot {
     void startBot ();

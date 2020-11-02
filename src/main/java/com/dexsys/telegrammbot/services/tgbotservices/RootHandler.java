@@ -1,8 +1,8 @@
-package com.dexsys.telegrammbot.TgBotServices;
+package com.dexsys.telegrammbot.services.tgbotservices;
 
-import com.dexsys.telegrammbot.Services.IUserAction;
-import com.dexsys.telegrammbot.Services.UserStatus;
-import com.dexsys.telegrammbot.TgBotServices.servicetgkeyboard.IKeyBoard;
+import com.dexsys.telegrammbot.services.userservices.IUserAction;
+import com.dexsys.telegrammbot.domain.UserStatus;
+import com.dexsys.telegrammbot.services.tgbotservices.servicetgkeyboard.IKeyBoard;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

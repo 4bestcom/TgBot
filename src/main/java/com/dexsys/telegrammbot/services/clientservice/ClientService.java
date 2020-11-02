@@ -1,7 +1,7 @@
-package com.dexsys.telegrammbot.Controller;
+package com.dexsys.telegrammbot.services.clientservice;
 
-import com.dexsys.telegrammbot.DTO.UserDTO;
-import com.dexsys.telegrammbot.Domain.User;
+import com.dexsys.telegrammbot.dto.UserDTO;
+import com.dexsys.telegrammbot.domain.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

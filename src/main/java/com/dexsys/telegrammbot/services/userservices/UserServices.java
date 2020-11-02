@@ -1,7 +1,8 @@
-package com.dexsys.telegrammbot.Services;
+package com.dexsys.telegrammbot.services.userservices;
 
-import com.dexsys.telegrammbot.Domain.User;
-import com.dexsys.telegrammbot.Repository.IRepository;
+import com.dexsys.telegrammbot.domain.User;
+import com.dexsys.telegrammbot.repository.IRepository;
+import com.dexsys.telegrammbot.domain.UserStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

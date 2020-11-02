@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.TgBotServices.servicetgkeyboard;
+package com.dexsys.telegrammbot.services.tgbotservices.servicetgkeyboard;
 
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
 

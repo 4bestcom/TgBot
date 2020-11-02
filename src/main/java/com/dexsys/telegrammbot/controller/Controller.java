@@ -1,7 +1,7 @@
-package com.dexsys.telegrammbot.Controller;
+package com.dexsys.telegrammbot.controller;
 
-import com.dexsys.telegrammbot.Domain.User;
-import com.dexsys.telegrammbot.Services.IUserAction;
+import com.dexsys.telegrammbot.domain.User;
+import com.dexsys.telegrammbot.services.userservices.IUserAction;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;

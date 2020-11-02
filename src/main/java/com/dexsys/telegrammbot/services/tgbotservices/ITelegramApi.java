@@ -1,6 +1,6 @@
-package com.dexsys.telegrammbot.TgBotServices;
+package com.dexsys.telegrammbot.services.tgbotservices;
 
-import com.dexsys.telegrammbot.Services.IUserAction;
+import com.dexsys.telegrammbot.services.userservices.IUserAction;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 
 public interface ITelegramApi {

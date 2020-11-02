@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.TgBotServices.servicetgkeyboard;
+package com.dexsys.telegrammbot.services.tgbotservices.servicetgkeyboard;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

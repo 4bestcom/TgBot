@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.TgBotServices;
+package com.dexsys.telegrammbot.services.tgbotservices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

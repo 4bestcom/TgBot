@@ -1,4 +1,4 @@
-package com.dexsys.telegrammbot.DTO;
+package com.dexsys.telegrammbot.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
