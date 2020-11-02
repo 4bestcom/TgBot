@@ -7,10 +7,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 
 public class ClientServiceDefault implements IClientServiceAction {
@@ -69,8 +66,8 @@ public class ClientServiceDefault implements IClientServiceAction {
     }
 
     @Override
-    public ResponseEntity<UserDTO[]> readAllUserFromServer() {
-        UserDTO[] userDTOarr = {
+    public ResponseEntity<List<UserDTO>> readAllUserFromServer() {
+        List<UserDTO> listUserDTO = Arrays.asList(
                 UserDTO.builder()
                         .birthDay("1971-10-30T07:05:47.513+00:00")
                         .chatId("59698484")
@@ -90,7 +87,8 @@ public class ClientServiceDefault implements IClientServiceAction {
                         .secondName("Pavlovich")
                         .middleName("Kuznecov")
                         .phone("+79018888888")
-                        .build()};
-        return new ResponseEntity<>(userDTOarr, HttpStatus.OK);
+                        .build());
+        return new ResponseEntity<>(listUserDTO, HttpStatus.OK);
     }
 }
+

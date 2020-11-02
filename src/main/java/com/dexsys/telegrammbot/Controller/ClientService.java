@@ -13,6 +13,7 @@ import org.springframework.web.client.RestOperations;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -78,14 +79,15 @@ public class ClientService implements IClientServiceAction {
         return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
-    public ResponseEntity<UserDTO[]> readAllUserFromServer() {
+    public ResponseEntity<List<UserDTO>> readAllUserFromServer() {
         UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
-        if (userDTOarr != null) {
-            log.info("array UserDTO: " + Arrays.toString(userDTOarr));
-            return new ResponseEntity<>(userDTOarr, HttpStatus.OK);
+        List<UserDTO> listUsers = Arrays.asList(userDTOarr);
+        if (!listUsers.isEmpty()) {
+            log.info("list UserDTO: " + Arrays.toString(userDTOarr));
+            return new ResponseEntity<>(listUsers, HttpStatus.OK);
         }
-        log.warn("userDTOarr is empty");
-        return new ResponseEntity<>(userDTOarr, HttpStatus.NOT_FOUND);
+        log.warn("listUserDTO is empty");
+        return new ResponseEntity<>(listUsers, HttpStatus.NOT_FOUND);
     }
 
     public ResponseEntity<Set<HttpMethod>> getOptionsFromServer(String uuid) {

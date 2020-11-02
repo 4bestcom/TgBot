@@ -5,6 +5,7 @@ import com.dexsys.telegrammbot.Domain.User;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
+import java.util.List;
 import java.util.Set;
 
 public interface IClientServiceAction {
@@ -18,6 +19,6 @@ public interface IClientServiceAction {
 
     ResponseEntity<String> generateUser();
 
-    ResponseEntity<UserDTO[]> readAllUserFromServer();
+    ResponseEntity<List<UserDTO>> readAllUserFromServer();
 
 }
