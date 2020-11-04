@@ -41,6 +41,33 @@ public class MapRepository implements IRepository {
     }
 
     @Override
+    public boolean updatePhone(String phone, long chatId) {
+        if (users.containsKey(chatId)) {
+            users.get(chatId).setPhone(phone);
+            return true;
+        }
+        throw new RuntimeException("user not found");
+    }
+
+    @Override
+    public boolean updateBirthDate(String birthDate, long chatId) {
+        if (users.containsKey(chatId)) {
+            users.get(chatId).setBirthDate(birthDate);
+            return true;
+        }
+        throw new RuntimeException("user not found");
+    }
+
+    @Override
+    public boolean updateUserStatus(UserStatus userStatus, long chatId) {
+        if (users.containsKey(chatId)) {
+            users.get(chatId).setUserStatus(userStatus);
+            return true;
+        }
+        throw new RuntimeException("user not found");
+    }
+
+    @Override
     public User read(long id) {
         return users.get(id);
     }

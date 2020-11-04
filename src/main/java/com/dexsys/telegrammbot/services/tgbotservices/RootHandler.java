@@ -67,14 +67,14 @@ public class RootHandler extends TelegramLongPollingBot {
             case USER_PRESS_BUTTON:
                 if (inputTextMg.matches(regexBirthday)) {
                     telegramApi.sendMgFromMatchesRegexBirthday(chatId, inputTextMg, iUserAction);
-                    iUserAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_DEFAULT);
+                    iUserAction.updateUserStatus(UserStatus.USER_DEFAULT, chatId);
                 } else {
                     telegramApi.sendMgErrorEnterBirthday(chatId);
                 }
                 break;
             case USER_START:
                 if (inputTextMg.equals("/addBirthday")) {
-                    iUserAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_PRESS_BUTTON);
+                    iUserAction.updateUserStatus(UserStatus.USER_PRESS_BUTTON, chatId);
                     telegramApi.sendMgFromCommandAddBirthday(chatId, iUserAction);
                 } else {
                     SendMessage message1 = new SendMessage();

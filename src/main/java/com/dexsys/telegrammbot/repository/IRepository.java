@@ -17,6 +17,12 @@ public interface IRepository {
 
     boolean delete(long id);
 
+    boolean updatePhone(String phone, long chatId);
+
+    boolean updateBirthDate(String birthDate, long chatId);
+
+    boolean updateUserStatus(UserStatus userStatus, long chatId);
+
 
 
 }

@@ -1,8 +1,8 @@
 package com.dexsys.telegrammbot.services.tgbotservices;
 
+import com.dexsys.telegrammbot.domain.UserStatus;
 import com.dexsys.telegrammbot.services.clientservice.IClientServiceAction;
 import com.dexsys.telegrammbot.services.userservices.IUserAction;
-import com.dexsys.telegrammbot.domain.UserStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,8 +63,8 @@ public class TgCommand implements ITelegramApi {
         log.info("user enter phone: " + phone);
         log.info("phone have access: " + iClientServiceAction.readUserPhoneFromServer(phone));
         if (phone.matches("\\+\\d{11}") && iClientServiceAction.readUserPhoneFromServer(phone)) {
-            userAction.readUserFromBase(chatId).setPhone(phone);
-            userAction.readUserFromBase(chatId).setUserStatus(UserStatus.USER_START);
+            userAction.updatePhone(phone, chatId);
+            userAction.updateUserStatus(UserStatus.USER_START, chatId);
             message.setChatId(chatId);
             message.setText("Номер телефона удачно добавлен");
             try {
@@ -106,7 +106,7 @@ public class TgCommand implements ITelegramApi {
     public void sendMgFromMatchesRegexBirthday(long chatId, String inputTextMg, IUserAction iUserAction) {
         SendMessage message = new SendMessage();
         log.info("User enter Birthday");
-        iUserAction.readUserFromBase(chatId).setBirthDate(inputTextMg);
+        iUserAction.updateBirthDate(inputTextMg, chatId);
         log.info("system find this user in DB, added before him Birthday");
         message.setChatId(chatId);
         message.setText("Спасибо");

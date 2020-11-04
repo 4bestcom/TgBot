@@ -15,4 +15,10 @@ public interface IUserAction {
     List<User> readAllUserFromBase();
 
     boolean deleteUser(long id);
+
+    boolean updatePhone(String phone, long chatId);
+
+    boolean updateUserStatus(UserStatus userStatus, long chatId);
+
+    boolean updateBirthDate(String birthDate, long chatId);
 }
