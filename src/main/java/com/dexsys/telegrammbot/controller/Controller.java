@@ -25,9 +25,9 @@ public class Controller {
         this.iUserAction = iUserAction;
     }
 
-    @GetMapping("/{phone}")
+    @GetMapping("/{phone}/phone")
     @ApiOperation(value = "Search a user with an phone")
-    public ResponseEntity<User> getUser(@PathVariable("phone") String phone) {
+    public ResponseEntity<User> getUserPhone(@PathVariable("phone") String phone) {
         try {
             User user = iUserAction.readUserUsingPhone(phone);
             log.info("user is found");
@@ -38,7 +38,7 @@ public class Controller {
         }
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}/id")
     @ApiOperation(value = "Search a user with an ID")
     public ResponseEntity<User> getUserId(@PathVariable("id") long chatId) {
         try {
