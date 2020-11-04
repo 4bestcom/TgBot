@@ -31,6 +31,7 @@ public class ConnectionFactory implements IRepository {
         }
         try {
             connection = DriverManager.getConnection(url, user, password);
+            connection.setAutoCommit(false);
             log.info("connection done");
             return connection;
         } catch (SQLException e) {
@@ -68,6 +69,7 @@ public class ConnectionFactory implements IRepository {
                     .append("');");
             statement.executeUpdate(query.toString());
             log.info("INSERT query was sending");
+            connection.commit();
         } catch (SQLException e) {
             throw new RuntimeException("query was not sending");
         }
@@ -210,6 +212,7 @@ public class ConnectionFactory implements IRepository {
                     .append(";");
             statement.execute(query.toString());
             log.info("user was deleted");
+            connection.commit();
             return true;
         } catch (SQLException e) {
             throw new RuntimeException("query not was sending");
@@ -229,6 +232,7 @@ public class ConnectionFactory implements IRepository {
                     .append(";");
             statement.execute(query.toString());
             log.info(phone + " was updated");
+            connection.commit();
             return true;
         } catch (SQLException e) {
             throw new RuntimeException("query not was sending");
@@ -248,6 +252,7 @@ public class ConnectionFactory implements IRepository {
                     .append(";");
             statement.execute(query.toString());
             log.info(birthDate + " was updated");
+            connection.commit();
             return true;
         } catch (SQLException e) {
             throw new RuntimeException("query not was sending");
@@ -267,6 +272,7 @@ public class ConnectionFactory implements IRepository {
                     .append(";");
             statement.execute(query.toString());
             log.info(userStatus + " was updated");
+            connection.commit();
             return true;
         } catch (SQLException e) {
             throw new RuntimeException("query not was sending");
