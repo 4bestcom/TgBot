@@ -14,7 +14,7 @@ public interface IUserAction {
 
     List<User> readAllUserFromBase();
 
-    boolean deleteUser(long id);
+    void deleteUser(long id);
 
     boolean updatePhone(String phone, long chatId);
 

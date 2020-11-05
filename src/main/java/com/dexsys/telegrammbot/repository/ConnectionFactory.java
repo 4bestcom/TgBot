@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class ConnectionFactory implements IRepository {
@@ -49,10 +50,10 @@ public class ConnectionFactory implements IRepository {
     }
 
     @Override
-    public void create(long chatId, String userName, UserStatus userStatus) {
-        if (read(chatId) != null) {
+    public User save(User user) {
+        if (findById(user.getChatId()).isPresent()) {
             log.info("user not created, was find in the base");
-            return;
+            return user;
         }
         try (Connection connection = getConnection();
              Statement statement = createStatement(connection)) {
@@ -61,11 +62,11 @@ public class ConnectionFactory implements IRepository {
                     .append(tableName)
                     .append(" (chatid, username, user_status)")
                     .append(" VALUES (")
-                    .append(chatId)
+                    .append(user.getChatId())
                     .append(", '")
-                    .append(userName)
+                    .append(user.getUserName())
                     .append("', '")
-                    .append(userStatus)
+                    .append(user.getUserStatus())
                     .append("');");
             statement.executeUpdate(query.toString());
             log.info("INSERT query was sending");
@@ -73,10 +74,11 @@ public class ConnectionFactory implements IRepository {
         } catch (SQLException e) {
             throw new RuntimeException("query was not sending");
         }
+        return user;
     }
 
     @Override
-    public User read(long chatId) {
+    public Optional<User> findById(long chatId) {
         User user = null;
         ResultSet resultSet = null;
         try (Connection connection = getConnection();
@@ -114,11 +116,11 @@ public class ConnectionFactory implements IRepository {
         } catch (SQLException e) {
             throw new RuntimeException("resultSet.next() not was reading");
         }
-        return user;
+        return Optional.ofNullable(user);
     }
 
     @Override
-    public User read(String phone) {
+    public Optional<User> findById(String phone) {
         User user = null;
         ResultSet resultSet = null;
         try (Connection connection = getConnection();
@@ -156,11 +158,11 @@ public class ConnectionFactory implements IRepository {
         } catch (SQLException e) {
             throw new RuntimeException("resultSet.next() not was reading");
         }
-        return user;
+        return Optional.ofNullable(user);
     }
 
     @Override
-    public List<User> readAll() {
+    public List<User> findAll() {
         ResultSet resultSet = null;
         try (Connection connection = getConnection();
              Statement statement = createStatement(connection)) {
@@ -201,7 +203,7 @@ public class ConnectionFactory implements IRepository {
     }
 
     @Override
-    public boolean delete(long chatId) {
+    public void deleteById(long chatId) {
         try (Connection connection = getConnection();
              Statement statement = createStatement(connection)) {
             StringBuilder query = new StringBuilder()
@@ -213,7 +215,6 @@ public class ConnectionFactory implements IRepository {
             statement.execute(query.toString());
             log.info("user was deleted");
             connection.commit();
-            return true;
         } catch (SQLException e) {
             throw new RuntimeException("query not was sending");
         }

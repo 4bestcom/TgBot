@@ -25,24 +25,11 @@ public class Controller {
         this.iUserAction = iUserAction;
     }
 
-    @GetMapping("/{phone}/phone")
+    @GetMapping("/{phone}")
     @ApiOperation(value = "Search a user with an phone")
     public ResponseEntity<User> getUserPhone(@PathVariable("phone") String phone) {
         try {
             User user = iUserAction.readUserUsingPhone(phone);
-            log.info("user is found");
-            return new ResponseEntity<>(user, HttpStatus.OK);
-        } catch (RuntimeException e) {
-            log.warn("user not found");
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-    }
-
-    @GetMapping("/{id}/id")
-    @ApiOperation(value = "Search a user with an ID")
-    public ResponseEntity<User> getUserId(@PathVariable("id") long chatId) {
-        try {
-            User user = iUserAction.readUserFromBase(chatId);
             log.info("user is found");
             return new ResponseEntity<>(user, HttpStatus.OK);
         } catch (RuntimeException e) {
@@ -65,13 +52,7 @@ public class Controller {
 
     @DeleteMapping("/{id}")
     @ApiOperation(value = "Delete a user with an ID")
-    public ResponseEntity<Boolean> deleteUser(@PathVariable("id") long id) {
-        boolean del = iUserAction.deleteUser(id);
-        if (del) {
-            return new ResponseEntity<>(true, HttpStatus.OK);
-        } else {
-            log.warn("user not found");
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+    public void deleteUser(@PathVariable("id") long id) {
+        iUserAction.deleteUser(id);
     }
 }

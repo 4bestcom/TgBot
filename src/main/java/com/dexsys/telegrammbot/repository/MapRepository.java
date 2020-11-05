@@ -6,10 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Component
 public class MapRepository implements IRepository {
@@ -17,27 +14,23 @@ public class MapRepository implements IRepository {
 
     private final Map<Long, User> users = new HashMap<>();
 
-    @Override
-    public void create(long id, String userName, UserStatus userStatus) {
-        if (users.containsKey(id)) {
-            return;
+    public User save(User user) {
+        if (users.containsKey(user.getChatId())) {
+            return user;
         }
-        users.put(id, createUser(id, userName, userStatus));
+        users.put(user.getChatId(), user);
+        return user;
     }
 
 
     @Override
-    public List<User> readAll() {
+    public List<User> findAll() {
         return new ArrayList<>(users.values());
     }
 
     @Override
-    public boolean delete(long id) {
-        if (users.containsKey(id)) {
-            users.remove(id);
-            return true;
-        }
-        return false;
+    public void deleteById(long id) {
+        users.remove(id);
     }
 
     @Override
@@ -68,17 +61,17 @@ public class MapRepository implements IRepository {
     }
 
     @Override
-    public User read(long id) {
-        return users.get(id);
+    public Optional<User> findById(long id) {
+        return Optional.ofNullable(users.get(id));
     }
 
     @Override
-    public User read(String phone) {
+    public Optional<User> findById(String phone) {
         for (Map.Entry<Long, User> entry : users.entrySet()) {
             String phoneUser = entry.getValue().getPhone();
             if (phoneUser.equals(phone)) {
                 log.warn("user is found");
-                return entry.getValue();
+                return Optional.ofNullable(entry.getValue());
             }
         }
         throw new RuntimeException("user not found in MockServer");

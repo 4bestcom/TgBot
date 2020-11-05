@@ -4,24 +4,28 @@ import com.dexsys.telegrammbot.domain.User;
 import com.dexsys.telegrammbot.domain.UserStatus;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IRepository {
 
-    void create(long id, String userName, UserStatus userStatus);
+    User save(User user);
 
-    User read(long id);
+    List<User> findAll();
 
-    User read (String phone);
+    Optional<User> findById(long id);
 
-    List<User> readAll();
+    Optional<User> findById(String phone);
 
-    boolean delete(long id);
+    void deleteById(long id);
 
     boolean updatePhone(String phone, long chatId);
 
     boolean updateBirthDate(String birthDate, long chatId);
 
     boolean updateUserStatus(UserStatus userStatus, long chatId);
+
+//    User createUser(long id, String userName, UserStatus userStatus);
+
 
 
 

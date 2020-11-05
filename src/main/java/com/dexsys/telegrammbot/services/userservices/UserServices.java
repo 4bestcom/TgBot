@@ -22,27 +22,28 @@ public class UserServices implements IUserAction {
 
     @Override
     public void createUserToBase(long id, String userName, UserStatus userStatus) {
-        repository.create(id, userName, userStatus);
+
+        repository.save(User.builder().chatId(id).userName(userName).userStatus(userStatus).build());
     }
     @Override
     public User readUserFromBase(long id) {
-        return repository.read(id);
+        return repository.findById(id).get();
     }
 
     @Override
     public User readUserUsingPhone(String phone) {
-        return repository.read(phone);
+        return repository.findById(phone).get();
     }
 
     @Override
-    public boolean deleteUser(long id) {
-        return repository.delete(id);
+    public void deleteUser(long id) {
+        repository.deleteById(id);
     }
 
 
     @Override
     public List<User> readAllUserFromBase() {
-        return repository.readAll();
+        return repository.findAll();
     }
 
 
