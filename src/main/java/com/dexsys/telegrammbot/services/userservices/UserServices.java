@@ -15,7 +15,7 @@ public class UserServices implements IUserAction {
     private IRepository repository;
 
     @Autowired
-    @Qualifier("connectionFactory")
+    @Qualifier("userCrudRepository")
     public void setRepository(IRepository repository) {
         this.repository = repository;
     }
@@ -32,7 +32,7 @@ public class UserServices implements IUserAction {
 
     @Override
     public User readUserUsingPhone(String phone) {
-        return repository.findById(phone).get();
+        return repository.findByPhone(phone).get();
     }
 
     @Override

@@ -120,7 +120,7 @@ public class ConnectionFactory implements IRepository {
     }
 
     @Override
-    public Optional<User> findById(String phone) {
+    public Optional<User> findByPhone(String phone) {
         User user = null;
         ResultSet resultSet = null;
         try (Connection connection = getConnection();

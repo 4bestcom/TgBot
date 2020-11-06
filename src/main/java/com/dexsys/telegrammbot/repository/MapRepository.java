@@ -66,7 +66,7 @@ public class MapRepository implements IRepository {
     }
 
     @Override
-    public Optional<User> findById(String phone) {
+    public Optional<User> findByPhone(String phone) {
         for (Map.Entry<Long, User> entry : users.entrySet()) {
             String phoneUser = entry.getValue().getPhone();
             if (phoneUser.equals(phone)) {

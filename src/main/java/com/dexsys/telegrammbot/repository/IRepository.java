@@ -14,7 +14,7 @@ public interface IRepository {
 
     Optional<User> findById(long id);
 
-    Optional<User> findById(String phone);
+    Optional<User> findByPhone(String phone);
 
     void deleteById(long id);
 
