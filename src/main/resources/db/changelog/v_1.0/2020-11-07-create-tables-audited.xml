@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+         http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd">
+
+    <changeSet id="create-aud-01" author="Roman_Bogatyrev" dbms="postgresql">
+        <createTable tableName="revinfo">
+            <column name="rev" type="integer">
+                <constraints primaryKey="true" primaryKeyName="rev_info_pk"/>
+            </column>
+            <column name="revtstmp"  type="bigint">
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-aud-02" author="Roman_Bogatyrev" dbms="postgresql">
+        <createTable tableName="users_hist">
+            <column name="chatid" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" remarks="name user" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="rev" type="integer">
+                <constraints referencedTableName="revinfo"
+                             foreignKeyName="fk_users_hist_revinfo"
+                             referencedColumnNames="rev"
+                             nullable="false"/>
+            </column>
+            <column name="revtype" type="smallint"/>
+            <column name="birthdate" remarks="birthdate user" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="phone" remarks="phone user" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="user_status" remarks="status user" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+</databaseChangeLog>
