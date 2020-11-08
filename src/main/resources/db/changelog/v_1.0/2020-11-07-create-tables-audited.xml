@@ -10,9 +10,9 @@
     <changeSet id="create-aud-01" author="Roman_Bogatyrev" dbms="postgresql">
         <createTable tableName="revinfo">
             <column name="rev" type="integer">
-                <constraints primaryKey="true" primaryKeyName="rev_info_pk"/>
+                <constraints primaryKey="true" primaryKeyName="rev_info_pk" nullable="false"/>
             </column>
-            <column name="revtstmp"  type="bigint">
+            <column name="revtstmp" type="bigint">
             </column>
         </createTable>
     </changeSet>
@@ -26,10 +26,13 @@
                 <constraints nullable="true"/>
             </column>
             <column name="rev" type="integer">
-                <constraints referencedTableName="revinfo"
+                <constraints primaryKey="true"
+                             referencedTableName="revinfo"
                              foreignKeyName="fk_users_hist_revinfo"
                              referencedColumnNames="rev"
-                             nullable="false"/>
+                             nullable="false"
+                             deferrable="false"
+                             initiallyDeferred="false"/>
             </column>
             <column name="revtype" type="smallint"/>
             <column name="birthdate" remarks="birthdate user" type="varchar(255)">
@@ -44,5 +47,10 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="create-aud-03" author="Roman_Bogatyrev">
+        <sql dbms="postgresql">
+            CREATE sequence public.hibernate_sequence start 1 increment 1
+        </sql>
+    </changeSet>
 
 </databaseChangeLog>

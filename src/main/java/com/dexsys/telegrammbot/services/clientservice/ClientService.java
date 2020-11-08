@@ -12,10 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestOperations;
 
 import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 
 public class ClientService implements IClientServiceAction {
@@ -34,7 +31,7 @@ public class ClientService implements IClientServiceAction {
         if (userDTOarr != null) {
             log.info("check phone to MockServer");
             return Arrays.stream(userDTOarr)
-                    .anyMatch(n -> n.getPhone().equals(phone));
+                    .anyMatch(n -> phone.equals(n.getPhone()));
         }
         log.warn("userDTOarr == null");
         return false;

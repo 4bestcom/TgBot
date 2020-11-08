@@ -9,7 +9,6 @@
 
     <include file="2020-11-07-create-tables-audited.xml" relativeToChangelogFile="true" />
     <include file="2020-11-07-create-table-users.xml" relativeToChangelogFile="true" />
-    <include file="2020-11-07-add-users-to-table.xml" relativeToChangelogFile="true" />
 
 
 </databaseChangeLog>
