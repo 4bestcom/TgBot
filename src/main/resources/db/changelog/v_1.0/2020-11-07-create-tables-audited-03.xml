@@ -7,10 +7,10 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
          http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd">
 
-    <include file="2020-11-07-create-tables-audited-01.xml" relativeToChangelogFile="true" />
-    <include file="2020-11-07-create-tables-audited-02.xml" relativeToChangelogFile="true" />
-    <include file="2020-11-07-create-tables-audited-03.xml" relativeToChangelogFile="true" />
-    <include file="2020-11-07-create-table-users.xml" relativeToChangelogFile="true" />
-
+    <changeSet id="create-aud-03" author="Roman_Bogatyrev">
+        <sql dbms="postgresql">
+            CREATE sequence public.hibernate_sequence start 1 increment 1
+        </sql>
+    </changeSet>
 
 </databaseChangeLog>
