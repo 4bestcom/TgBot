@@ -10,21 +10,24 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestOperations;
-
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.UUID;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
 
 
 public class ClientService implements IClientServiceAction {
     private static final Logger log = LoggerFactory.getLogger(ClientService.class);
     private final String URL = "https://serene-coast-56441.herokuapp.com/api/users/";
     private RestOperations restTemplate;
+
     @Autowired
     public void setRestOperations(RestOperations restTemplate) {
         this.restTemplate = restTemplate;
     }
 
-    //this method is for inner business logic
+    /* This method is for inner business logic */
     public boolean readUserPhoneFromServer(String phone) {
         UserDTO[] userDTOarr = restTemplate.getForObject(URL, UserDTO[].class);
         log.info("array UserDTO: " + Arrays.toString(userDTOarr));

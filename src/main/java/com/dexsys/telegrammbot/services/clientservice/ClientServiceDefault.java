@@ -1,16 +1,18 @@
 package com.dexsys.telegrammbot.services.clientservice;
 
-
 import com.dexsys.telegrammbot.dto.UserDTO;
 import com.dexsys.telegrammbot.domain.User;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
-import java.util.*;
-
+import java.util.UUID;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.List;
+import java.util.Arrays;
 
 public class ClientServiceDefault implements IClientServiceAction {
+
     @Override
     public ResponseEntity<String> createUser(User user) {
         return new ResponseEntity<>("{\n" +

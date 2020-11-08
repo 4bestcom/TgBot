@@ -11,7 +11,6 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-
 @Configuration
 public class SpringSwaggerConfig {
 
@@ -25,8 +24,6 @@ public class SpringSwaggerConfig {
                 .pathMapping("/")
                 .apiInfo(metaData());
     }
-
-
 
     public ApiInfo metaData() {
         return new ApiInfoBuilder()

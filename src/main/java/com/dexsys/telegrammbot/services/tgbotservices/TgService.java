@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
-
 import javax.annotation.PostConstruct;
 
 @Service
@@ -20,7 +19,6 @@ public class TgService implements IStartTelegramBot {
     @PostConstruct
     @Override
     public void startBot() {
-
         TelegramBotsApi tgApi = new TelegramBotsApi();
         try {
             tgApi.registerBot(handler);
@@ -28,5 +26,4 @@ public class TgService implements IStartTelegramBot {
             e.printStackTrace();
         }
     }
-
 }

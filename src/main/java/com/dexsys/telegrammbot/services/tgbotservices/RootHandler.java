@@ -14,11 +14,11 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 @Component
 public class RootHandler extends TelegramLongPollingBot {
+    private static final Logger log = LoggerFactory.getLogger(RootHandler.class);
     private static final String TOKEN = "1399901257:AAEVQYREew0BXSH8T7n40YiKI_uI8VRXudQ";
     private static final String NAME_BOT = "BirthdayDexTgBot";
     private IUserAction iUserAction;
     private IKeyBoard keyBoard;
-    private static final Logger log = LoggerFactory.getLogger(RootHandler.class);
     private ITelegramApi telegramApi;
 
     @Autowired
@@ -48,11 +48,11 @@ public class RootHandler extends TelegramLongPollingBot {
         UserStatus userStatus = iUserAction.readUserFromBase(chatId).getUserStatus();
         SendMessage message = new SendMessage();
 
-        if (inputTextMg.equals("/help")) {
+        if ("/help".equals(inputTextMg)) {
             telegramApi.sendMgFromHelp(chatId, message);
             return;
         }
-        if (inputTextMg.equals("/infoAboutMe")) {
+        if ("/infoAboutMe".equals(inputTextMg)) {
             telegramApi.sendMgFromInfoMe(chatId, message, iUserAction);
             return;
         }
@@ -73,7 +73,7 @@ public class RootHandler extends TelegramLongPollingBot {
                 }
                 break;
             case USER_START:
-                if (inputTextMg.equals("/addBirthday")) {
+                if ("/addBirthday".equals(inputTextMg)) {
                     iUserAction.updateUserStatus(UserStatus.USER_PRESS_BUTTON, chatId);
                     telegramApi.sendMgFromCommandAddBirthday(chatId, iUserAction);
                 } else {

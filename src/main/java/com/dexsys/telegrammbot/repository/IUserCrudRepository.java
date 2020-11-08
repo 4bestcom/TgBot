@@ -7,5 +7,4 @@ import java.util.Optional;
 public interface IUserCrudRepository extends CrudRepository<User, Long> {
 
     Optional<User> findByPhone (String phone);
-
 }

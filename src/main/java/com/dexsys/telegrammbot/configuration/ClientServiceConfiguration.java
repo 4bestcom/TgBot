@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ClientServiceConfiguration {
 
-
     @Bean
     @ConditionalOnProperty(name = "useMock", havingValue = "true")
     public ClientService getClientService() {

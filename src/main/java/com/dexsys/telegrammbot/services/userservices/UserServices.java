@@ -6,12 +6,10 @@ import com.dexsys.telegrammbot.domain.UserStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 
 @Component
 public class UserServices implements IUserAction {
-
     private IRepository repository;
 
     @Autowired
@@ -22,7 +20,6 @@ public class UserServices implements IUserAction {
 
     @Override
     public void createUserToBase(long id, String userName, UserStatus userStatus) {
-
         repository.save(User.builder().chatId(id).userName(userName).userStatus(userStatus).build());
     }
     @Override
@@ -40,12 +37,10 @@ public class UserServices implements IUserAction {
         repository.deleteById(id);
     }
 
-
     @Override
     public List<User> readAllUserFromBase() {
         return repository.findAll();
     }
-
 
     @Override
     public boolean updatePhone(String phone, long chatId) {

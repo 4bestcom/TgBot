@@ -62,7 +62,7 @@ public class TgCommand implements ITelegramApi {
         String phone = inputTextMg.replaceAll("[^\\+\\d]", "");
         log.info("user enter phone: " + phone);
         log.info("phone have access: " + iClientServiceAction.readUserPhoneFromServer(phone));
-        if (phone.matches("\\+\\d{11}") && iClientServiceAction.readUserPhoneFromServer(phone)) {
+        if ((phone.matches("\\+\\d{11}")) && (iClientServiceAction.readUserPhoneFromServer(phone))) {
             userAction.updatePhone(phone, chatId);
             userAction.updateUserStatus(UserStatus.USER_START, chatId);
             message.setChatId(chatId);

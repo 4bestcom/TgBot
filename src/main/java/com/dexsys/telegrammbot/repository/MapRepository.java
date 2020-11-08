@@ -5,13 +5,15 @@ import com.dexsys.telegrammbot.domain.UserStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 @Component
 public class MapRepository implements IRepository {
     private static final Logger log = LoggerFactory.getLogger(MapRepository.class);
-
     private final Map<Long, User> users = new HashMap<>();
 
     public User save(User user) {
@@ -21,7 +23,6 @@ public class MapRepository implements IRepository {
         users.put(user.getChatId(), user);
         return user;
     }
-
 
     @Override
     public List<User> findAll() {
@@ -69,15 +70,11 @@ public class MapRepository implements IRepository {
     public Optional<User> findByPhone(String phone) {
         for (Map.Entry<Long, User> entry : users.entrySet()) {
             String phoneUser = entry.getValue().getPhone();
-            if (phoneUser.equals(phone)) {
+            if (phone.equals(phoneUser)) {
                 log.warn("user is found");
                 return Optional.ofNullable(entry.getValue());
             }
         }
         throw new RuntimeException("user not found in MockServer");
-    }
-
-    public User createUser(long id, String userName, UserStatus userStatus) {
-        return User.builder().chatId(id).userName(userName).userStatus(userStatus).build();
     }
 }

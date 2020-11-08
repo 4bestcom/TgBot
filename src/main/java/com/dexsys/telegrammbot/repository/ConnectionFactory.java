@@ -5,7 +5,6 @@ import com.dexsys.telegrammbot.domain.UserStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +18,6 @@ public class ConnectionFactory implements IRepository {
     private final String url = "jdbc:postgresql://ec2-3-218-75-21.compute-1.amazonaws.com:5432/d2tlq0pc7d1i7e";
     private final String user = "kwooypjvvqhfbi";
     private final String password = "05df0ae32828a2a3e76bb60c864d98ac1834132a90202e51526d3aa2451d9b83";
-
-
 
     public Connection getConnection() {
         Connection connection;
