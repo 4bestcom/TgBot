@@ -3,7 +3,7 @@
     <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
         <smtpHost>smtp.mail.ru</smtpHost>
         <username>sfl4j@mail.ru</username>
-        <password>lj,hsqdtxth</password>
+        <password>**********************************************</password>
         <SSL>true</SSL>
         <smtpPort>465</smtpPort>
         <to>manhunt10@yandex.ru</to>
